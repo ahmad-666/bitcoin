@@ -1,0 +1,52 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+#whyBitcoin{
+    @include containerStyle ;
+    padding: 0 ;
+    margin-top: $dist4 ;
+    box-shadow: none ;
+    background-color: transparent ;
+    border-radius: 0 ;
+    display: flex ;
+    @include flex(column,flex-start,center,nowrap,"") ;
+    h4{
+        font-size: $fontL ;
+        font-weight: 700 ;
+        color: $textDark ;
+    }
+    .features{
+        width: 100% ;
+        height: auto;
+        margin-top: $dist2 ;
+        display: flex ;
+        @include flex(row,space-around,flex-start,wrap,flex-start) ;
+        .feature{
+            @include containerStyle;
+            width: 35em ;
+            min-height: 30em ;
+            margin: 0 ;
+            display: flex ;
+            @include flex(column,flex-start,center,nowrap,"") ;
+            &:nth-child(2){margin-right: $dist2 ;}
+            h4,p{margin-top: $dist1 ;}
+            img{
+                width: 12em ;
+                height: 10em;
+            }
+            h4{
+                font-size: $fontL ;
+                font-weight: 700 ;
+                color: $textDark ;
+            }
+            p{
+                max-width: 100%;
+                font-size: $fontM - .2em;
+                line-height: $dist2 + .5em ;
+                color: darken($textGrey,25%) ;
+            }
+        }
+
+    }
+    
+}

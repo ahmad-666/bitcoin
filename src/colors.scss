@@ -15,15 +15,16 @@ $bodyColor: darken($whiteColor1,5%) ;
 //back-ground color--------------------------------------
 $bgColor: white ;
 //text color------------------------------
-$textLight: $whiteColor2;
+$textWhite: $whiteColor2;
 $textDark: $darkColor;
+$textGrey: $greyColor ;
 //blue color------------------------------
 $blueColor1 : #007FE8 ;
 $blueColor2 : #003DBB ;
 //green color------------------------------
 $greenColor1: #00BC9A ;
 //teal color------------------------------
-$tealColor: #00ABBD ;
+$tealColor: #80cbc4 ;
 //red color------------------------------
 $redColor1 : #FF427B ;
 $redColor2: #e74a4a  ;
@@ -55,8 +56,9 @@ $blackFilter3: rgba(30,30,30,.8) ;
     paleColor: $paleColor ;
     bodyColor: $bodyColor ;
     bgColor: $bgColor ;
-    textLight: $textLight ;
-    textDark: $textDark ;
+    textWhite: $textWhite;
+    textDark: $textDark;
+    textGrey: $textGrey ;
     blueColor1 : $blueColor1 ;
     blueColor2 : $blueColor2 ;
     greenColor1: $greenColor1 ;

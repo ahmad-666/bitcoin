@@ -5,13 +5,16 @@
     padding: 0;
     margin: 0;
     direction: rtl ;
-    font-family: byekan ;
-    // font-family: iranSans ;
+    // font-family: byekan ;
+    font-family: iranSans ;
     -webkit-tap-highlight-color: transparent;
 }
 html,body{
     height: 100%;
-    font-size: 1px !important ;
+    font-size: 10px !important ;
+}
+body.bg{
+    background-color: $bodyColor;
 }
 a {
     border: none ;
