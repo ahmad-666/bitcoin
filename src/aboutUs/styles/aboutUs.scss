@@ -1,0 +1,19 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+#aboutUs{
+    @include containerStyle ;
+    display: flex ;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    h4{
+        font-size: $fontXL ;
+        color: $textDark ;
+        font-weight: 700 ;
+    }
+    p{
+        margin-top: $dist1 ;
+        font-size: $fontM ;
+        color: darken($textGrey,20%) ;
+        line-height: $dist2 + .5em ; 
+    }
+}

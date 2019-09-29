@@ -77,7 +77,7 @@
     width: 80% ;
     height: auto;
     margin: $dist3 auto 0 auto ;
-    padding: $dist1 $dist2 ;
+    padding: $dist2 $dist2 + 1em ;
     background-color: $bgColor ;
     box-shadow: 0 0 1em .01em $shadowColor ;
     border-radius: $dist2 ;

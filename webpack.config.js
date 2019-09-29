@@ -10,6 +10,11 @@ module.exports = {
     },
     entry: {//we create new property for each entry point , key is name and value should point to entry point
         'index' : './src/index/index.js' ,    
+        'aboutUs' : './src/aboutUs/aboutUs.js' ,    
+        'rules' : './src/rules/rules.js' ,    
+        'login' : './src/login/login.js' ,    
+        'signup' : './src/signup/signup.js' ,    
+        'forgetPassword' : './src/forget-password/forget-password.js' ,    
     },
     output: {//for each entry point we create one .js bundle(with the same name of entry point)
         filename: '[name].js',
@@ -132,6 +137,36 @@ module.exports = {
             inject: true,
             chunks: ['index'],
             template: './src/index/index.html' //should point to target html file that we want to add <script>,<link>
+        }),
+        new HtmlWebpackPlugin({ //for each .html file we need new instance of 'HtmlWebpackPlugin'
+            filename: 'aboutUs.html' , //name of file inside ./dist folder
+            inject: true,
+            chunks: ['aboutUs'],
+            template: './src/aboutUs/aboutUs.html' //should point to target html file that we want to add <script>,<link>
+        }),     
+        new HtmlWebpackPlugin({ //for each .html file we need new instance of 'HtmlWebpackPlugin'
+            filename: 'rules.html' , //name of file inside ./dist folder
+            inject: true,
+            chunks: ['rules'],
+            template: './src/rules/rules.html' //should point to target html file that we want to add <script>,<link>
+        }),
+        new HtmlWebpackPlugin({ //for each .html file we need new instance of 'HtmlWebpackPlugin'
+            filename: 'login.html' , //name of file inside ./dist folder
+            inject: true,
+            chunks: ['login'],
+            template: './src/login/login.html' //should point to target html file that we want to add <script>,<link>
+        }),
+        new HtmlWebpackPlugin({ //for each .html file we need new instance of 'HtmlWebpackPlugin'
+            filename: 'signup.html' , //name of file inside ./dist folder
+            inject: true,
+            chunks: ['signup'],
+            template: './src/signup/signup.html' //should point to target html file that we want to add <script>,<link>
+        }),
+        new HtmlWebpackPlugin({ //for each .html file we need new instance of 'HtmlWebpackPlugin'
+            filename: 'forget-password.html' , //name of file inside ./dist folder
+            inject: true,
+            chunks: ['forgetPassword'],
+            template: './src/forget-password/forget-password.html' //should point to target html file that we want to add <script>,<link>
         }),
         new CleanWebpackPlugin()
     ]

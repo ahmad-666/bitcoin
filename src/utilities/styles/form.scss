@@ -1,23 +1,39 @@
-@import './colors.scss';
-@import './variables.scss';
-@import './mixins.scss';
-
-body {
-    background-color: darken($whiteColor2, 3%);
-}
-
-form#sample {
+@import '../../colors.scss';
+@import '../../variables.scss';
+@import '../../mixins.scss';
+form#login,form#forgetPassword,form#signup {
     @include containerStyle;
-    width: 80%;
+    width: 40em;
     height: auto;
-    padding: $dist1;
-    margin: $sectionsDist auto;
+    padding: $dist2;
+    margin: $dist4 auto ;
     display: flex;
     @include flex(column, flex-start, center, nowrap, "");
+    overflow: hidden;
+    #logo{
+        width: auto ;
+        height: auto;
+        text-align: center ;
+        img{
+            width: 60% ;
+            height: 4em;
+        }
+    }
     h4 {
-        font-size: $font-l;
+        font-size: $fontL;
         font-weight: 700;
         color: $darkColor;
+        margin-top: $dist1 ;
+    }
+    a#forgetLink,a#signupLink{
+        font-size: $fontM - .2em;
+        color: $textGrey ;
+        margin-top: $dist2 ;
+    }
+    a#forgetLink{
+        width: 100% ;
+        text-align: right ;
+        margin-right: 10% ;
     }
     .inputs {
         width: 100%;
@@ -27,31 +43,30 @@ form#sample {
         @include flex(row, flex-start, center, wrap, flex-start);
     }
     .inputWrapper.text {
-        width: auto;
+        width: 90%;
         height: auto;
         position: relative;
-        margin: $dist2;
+        margin-top: $dist3 ;
         input {
-            width: calc((80vw - (4 * 3em)) / 4);
+            width: 100%;
             height: 2.5em;
             line-height: 2.5em;
             padding: 0 $dist1;
-            font-size: $font-m;
+            font-size: $fontM;
             color: $darkColor;
             transition: all .2s linear;
             &::placeholder {
-                color: $greyColor2;
-                font-size: $font-m;
+                color: $textGrey;
+                font-size: $fontM;
             }
         }
         input.style1 {
             border: none;
-            border-bottom: 1.2px solid lighten($greyColor2, 25%);
-
+            border-bottom: 1.2px solid lighten($textGrey, 25%);
             &:focus {
                 ~label {
                     color: $primaryColor;
-                    font-size: 16px;
+                    font-size: 8px;
                     bottom: calc(100% + .5em);
                     transform: translateY(50%);
                     right: 0;
@@ -64,7 +79,7 @@ form#sample {
         }
 
         input.style2 {
-            border: 1.2px solid lighten($greyColor2, 25%);
+            border: 1.2px solid lighten($textGrey, 25%);
             border-radius: $dist3;
 
             &:focus {
@@ -72,7 +87,7 @@ form#sample {
 
                 ~label {
                     color: $primaryColor;
-                    font-size: 16px;
+                    font-size: 8px;
                     bottom: calc(100% + 1em);
                     transform: translateY(50%);
                     right: 0;
@@ -86,7 +101,6 @@ form#sample {
 
         input.style1.error {
             border-bottom: 1.2px solid lighten($redColor2, 5%);
-
             ~label {
                 color: lighten($redColor2, 5%);
             }
@@ -113,31 +127,29 @@ form#sample {
             transform: translateY(50%);
             display: flex;
             @include flex(row, flex-start, center, nowrap, "");
-            color: lighten($greyColor2, 20%);
+            color: lighten($textGrey, 20%);
             transition: all .2s linear;
 
             .icon {
-                font-size: $font-m;
+                font-size: $fontM;
             }
 
             p {
-                font-size: $font-m - .1em;
+                font-size: $fontM - .1em;
                 transform: translateX(-.3em);
             }
         }
-
         input.style1 {
             ~label.top {
-                font-size: 16px;
+                font-size: 8px;
                 bottom: calc(100% + .5em);
                 transform: translateY(50%);
                 right: 0;
             }
         }
-
         input.style2 {
             ~label.top {
-                font-size: 16px;
+                font-size: 8px;
                 bottom: calc(100% + 1em);
                 transform: translateY(50%);
                 right: 0;
@@ -170,11 +182,11 @@ form#sample {
 
             p {
                 color: $whiteColor2;
-                font-size: $font-m - .2em;
+                font-size: $fontM - .2em;
             }
 
             i {
-                font-size: $font-xl;
+                font-size: $fontXL;
                 color: lighten($redColor2, 5%);
                 position: absolute;
                 right: $dist2;
@@ -188,7 +200,6 @@ form#sample {
             z-index: 2;
         }
     }
-
     .inputWrapper.select {
         width: auto;
         height: auto;
@@ -201,23 +212,23 @@ form#sample {
             line-height: 2.5em;
             padding: 0 $dist1;
             color: $darkColor;
-            font-size: $font-m;
+            font-size: $fontM;
             cursor: pointer;
             transition: all .2s linear;
 
             &::placeholder {
-                font-size: $font-m;
-                color: $greyColor2;
+                font-size: $fontM;
+                color: $textGrey;
             }
         }
 
         input.style1 {
             border: none;
-            border-bottom: 1.2px solid lighten($greyColor2, 25%);
+            border-bottom: 1.2px solid lighten($textGrey, 25%);
 
             &:focus {
                 ~label {
-                    font-size: 16px;
+                    font-size: 8px;
                     color: $primaryColor;
                     right: 0;
                     bottom: calc(100% + 0em);
@@ -239,14 +250,14 @@ form#sample {
         }
 
         input.style2 {
-            border: 1.2px solid lighten($greyColor2, 25%);
+            border: 1.2px solid lighten($textGrey, 25%);
             border-radius: $dist3;
 
             &:focus {
                 border: 1.2px solid $primaryColor;
 
                 ~label {
-                    font-size: 16px;
+                    font-size: 8px;
                     color: $primaryColor;
                     right: 0;
                     bottom: calc(100% + .5em);
@@ -304,7 +315,7 @@ form#sample {
             height: auto;
             display: flex;
             @include flex(row, flex-start, center, nowrap, "");
-            color: lighten($greyColor2, 20%);
+            color: lighten($textGrey, 20%);
             position: absolute;
             right: $dist1;
             bottom: 50%;
@@ -312,18 +323,18 @@ form#sample {
             transition: all .2s linear;
 
             .icon {
-                font-size: $font-m;
+                font-size: $fontM;
             }
 
             p {
-                font-size: $font-m - .1em;
+                font-size: $fontM - .1em;
                 transform: translateX(-.3em);
             }
         }
 
         input.style1 {
             ~label.top {
-                font-size: 16px;
+                font-size: 8px;
                 right: 0;
                 bottom: calc(100% + 0em);
             }
@@ -331,7 +342,7 @@ form#sample {
 
         input.style2 {
             ~label.top {
-                font-size: 16px;
+                font-size: 8px;
                 right: 0;
                 bottom: calc(100% + .5em);
             }
@@ -339,8 +350,8 @@ form#sample {
 
         .arrow {
             cursor: pointer;
-            font-size: $font-l;
-            color: lighten($greyColor2, 20%);
+            font-size: $fontL;
+            color: lighten($textGrey, 20%);
             @include center-y;
             left: $dist1;
             transition: all .2s linear;
@@ -376,7 +387,7 @@ form#sample {
                 height: 2.5em;
                 line-height: 2.5em;
                 padding: 0 $dist1;
-                font-size: $font-m;
+                font-size: $fontM;
                 color: $darkColor;
                 transition: all .2s linear;
                 cursor: pointer;
@@ -405,23 +416,23 @@ form#sample {
             line-height: 2.5em;
             padding: 0 $dist1;
             color: $darkColor;
-            font-size: $font-m;
+            font-size: $fontM;
             cursor: pointer;
             transition: all .2s linear;
 
             &::placeholder {
-                font-size: $font-m;
-                color: $greyColor2;
+                font-size: $fontM;
+                color: $textGrey;
             }
         }
 
         input.style1 {
             border: none;
-            border-bottom: 1.2px solid lighten($greyColor2, 25%);
+            border-bottom: 1.2px solid lighten($textGrey, 25%);
 
             &:focus {
                 ~label {
-                    font-size: 16px;
+                    font-size: 8px;
                     color: $primaryColor;
                     right: 0;
                     bottom: calc(100% + 0em);
@@ -443,14 +454,14 @@ form#sample {
         }
 
         input.style2 {
-            border: 1.2px solid lighten($greyColor2, 25%);
+            border: 1.2px solid lighten($textGrey, 25%);
             border-radius: $dist3;
 
             &:focus {
                 border: 1.2px solid $primaryColor;
 
                 ~label {
-                    font-size: 16px;
+                    font-size: 8px;
                     color: $primaryColor;
                     right: 0;
                     bottom: calc(100% + .5em);
@@ -508,7 +519,7 @@ form#sample {
             height: auto;
             display: flex;
             @include flex(row, flex-start, center, nowrap, "");
-            color: lighten($greyColor2, 20%);
+            color: lighten($textGrey, 20%);
             position: absolute;
             right: $dist1;
             bottom: 50%;
@@ -516,18 +527,18 @@ form#sample {
             transition: all .2s linear;
 
             .icon {
-                font-size: $font-m;
+                font-size: $fontM;
             }
 
             p {
-                font-size: $font-m - .1em;
+                font-size: $fontM - .1em;
                 transform: translateX(-.3em);
             }
         }
 
         input.style1 {
             ~label.top {
-                font-size: 16px;
+                font-size: 8px;
                 right: 0;
                 bottom: calc(100% + 0em);
             }
@@ -535,7 +546,7 @@ form#sample {
 
         input.style2 {
             ~label.top {
-                font-size: 16px;
+                font-size: 8px;
                 right: 0;
                 bottom: calc(100% + .5em);
             }
@@ -543,8 +554,8 @@ form#sample {
 
         .arrow {
             cursor: pointer;
-            font-size: $font-l;
-            color: lighten($greyColor2, 20%);
+            font-size: $fontL;
+            color: lighten($textGrey, 20%);
             @include center-y;
             left: $dist1;
             transition: all .2s linear;
@@ -580,7 +591,7 @@ form#sample {
                 height: 2.5em;
                 line-height: 2.5em;
                 padding: 0 $dist1;
-                font-size: $font-m;
+                font-size: $fontM;
                 color: $darkColor;
                 transition: all .2s linear;
                 cursor: pointer;
@@ -597,7 +608,6 @@ form#sample {
             visibility: visible;
         }
     }
-
     .inputWrapper.withSubmit {
         width: auto;
         height: auto;
@@ -610,14 +620,14 @@ form#sample {
             line-height: 2.5em;
             padding: 0 $dist1;
             color: $darkColor;
-            font-size: $font-m;
+            font-size: $fontM;
             border-radius: $dist3;
-            border: 1.2px solid lighten($greyColor2, 25%);
+            border: 1.2px solid lighten($textGrey, 25%);
             transition: all .2s linear;
 
             &::placeholder {
-                font-size: $font-m;
-                color: $greyColor2;
+                font-size: $fontM;
+                color: $textGrey;
             }
 
             &:focus {
@@ -643,7 +653,7 @@ form#sample {
 
             i {
                 color: $whiteColor2;
-                font-size: $font-l;
+                font-size: $fontL;
                 transform: translateY(.2em);
             }
         }
@@ -662,7 +672,7 @@ form#sample {
             top: 115%;
 
             i {
-                font-size: $font-l;
+                font-size: $fontL;
                 color: lighten($redColor2, 5%);
                 position: absolute;
                 right: $dist2;
@@ -671,7 +681,7 @@ form#sample {
 
             p {
                 color: $whiteColor2;
-                font-size: $font-m - .2em;
+                font-size: $fontM - .2em;
             }
         }
 
@@ -680,7 +690,6 @@ form#sample {
             visibility: visible;
         }
     }
-
     .inputWrapper.numberHandler {
         width: auto;
         height: auto;
@@ -700,10 +709,10 @@ form#sample {
 
         .increase,
         .decrease {
-            font-size: $font-m;
+            font-size: $fontM;
             cursor: pointer;
             color: lighten($darkColor, 5%);
-            // color: darken($greyColor2,15%) ;      
+            // color: darken($textGrey,15%) ;      
         }
 
         input {
@@ -712,8 +721,8 @@ form#sample {
             text-align: center;
             line-height: 2em;
             color: $darkColor;
-            font-size: $font-m;
-            border: 1.2px solid lighten($greyColor2, 20%);
+            font-size: $fontM;
+            border: 1.2px solid lighten($textGrey, 20%);
 
         }
 
@@ -721,19 +730,16 @@ form#sample {
             border: 1.2px solid lighten($redColor2, 5%);
         }
     }
-
     .inputWrapper.checkboxes {
         width: auto;
         height: auto;
         display: flex;
         @include flex(column, flex-start, flex-start, nowrap, "");
-        margin: $dist2;
-
+        margin-top: $dist3;
         .checkbox {
             width: calc((80vw - (4 * 2.4em)) / 4);
             height: 2.5em;
             padding-right: $dist1;
-
             input[type="checkbox"] {
                 width: 0;
                 height: 0;
@@ -744,14 +750,14 @@ form#sample {
                 &:checked {
                     ~label {
                         .rect {
-                            width: 1.4em;
-                            height: .6em;
+                            width: 2.3em;
+                            height: 1em;
                             border-radius: 0;
                             border-top: none;
                             border-right: none;
                             border-left: 1.2px solid $primaryColor;
                             border-bottom: 1.2px solid $primaryColor;
-                            transform: translateY(-.3em) rotate(-45deg);
+                            transform: translateY(-$dist1 + .2em) rotate(-45deg);
                         }
 
                         p {
@@ -790,17 +796,17 @@ form#sample {
 
                 .rect {
                     flex-shrink: 0;
-                    width: 1.2em;
-                    height: 1.2em;
-                    border: 1px solid darken($greyColor2, 15%);
+                    width: 2em;
+                    height: 2em;
+                    border: 1px solid darken($textGrey, 15%);
                     position: relative;
                     transition: all .2s linear;
-                    border-radius: .3em;
+                    border-radius: $dist1 - .2em;
 
                     i {
                         @include center-xy;
                         opacity: 0;
-                        font-size: $font-m;
+                        font-size: $fontM;
                         color: $whiteColor2;
                         transition: all .2s linear;
                     }
@@ -808,16 +814,18 @@ form#sample {
 
                 p {
                     max-width: calc(100% - .5em - 1.2em - .5em);
-                    @include ellipse;
-                    font-size: $font-m;
-                    color: darken($greyColor2, 15%);
-                    margin-right: $dist1;
+                    @include multiEllipse(1,$dist2 + .5em,$textDark);
+                    font-size: $fontM;
+                    color: darken($textGrey, 15%);
+                    margin-right: .3em;
                     transition: all .2s linear;
                 }
             }
         }
     }
-
+    .inputWrapper.checkboxes.rememberMe{
+        margin-right: 10% ;
+    }
     .inputWrapper.radios {
         width: auto;
         height: auto;
@@ -905,7 +913,7 @@ form#sample {
                     width: 1.5em;
                     height: 1.5em;
                     border-radius: 50%;
-                    border: 1px solid darken($greyColor2, 15%);
+                    border: 1px solid darken($textGrey, 15%);
                     transition: all .2s linear;
                     position: relative;
                     transition: all .2s linear;
@@ -923,15 +931,14 @@ form#sample {
                 }
 
                 p {
-                    font-size: $font-m;
-                    color: darken($greyColor2, 15%);
+                    font-size: $fontM;
+                    color: darken($textGrey, 15%);
                     margin-right: $dist1;
                     transition: all .2s linear;
                 }
             }
         }
     }
-
     .inputWrapper.toggle {
         width: auto;
         height: auto;
@@ -949,13 +956,13 @@ form#sample {
         }
 
         .toggleText {
-            font-size: $font-m;
-            color: lighten($greyColor2, 30%);
+            font-size: $fontM;
+            color: lighten($textGrey, 30%);
             transition: all .2s linear;
         }
 
         .toggleText.active {
-            color: darken($greyColor2, 30%);
+            color: darken($textGrey, 30%);
         }
 
         .switch {
@@ -985,7 +992,6 @@ form#sample {
             }
         }
     }
-
     .inputWrapper.textarea {
         width: auto;
         height: auto;
@@ -995,7 +1001,7 @@ form#sample {
 
         textarea {
             width: calc((80vw - (2 * 3.6em)) / 2);
-            font-size: $font-m;
+            font-size: $fontM;
             color: $darkColor;
             padding: $dist1;
             line-height: $dist3;
@@ -1003,14 +1009,14 @@ form#sample {
             resize: none;
 
             &::placeholder {
-                font-size: $font-m;
-                color: $greyColor2;
+                font-size: $fontM;
+                color: $textGrey;
             }
         }
 
         textarea.style1 {
             height: 8em;
-            border: 1.2px solid lighten($greyColor2, 25%);
+            border: 1.2px solid lighten($textGrey, 25%);
             border-radius: $dist2;
 
             ~label {
@@ -1022,7 +1028,7 @@ form#sample {
                 border: 1.2px solid $primaryColor;
 
                 ~label {
-                    font-size: 16px;
+                    font-size: 8px;
                     right: $dist1;
                     color: $primaryColor;
                     bottom: calc(100% + .5em);
@@ -1036,7 +1042,7 @@ form#sample {
             max-height: 12em;
             overflow: auto;
             border: none;
-            border-bottom: 1.2px solid lighten($greyColor2, 25%);
+            border-bottom: 1.2px solid lighten($textGrey, 25%);
 
             ~label {
                 bottom: 50%;
@@ -1047,7 +1053,7 @@ form#sample {
                 border-bottom: 1.2px solid $primaryColor;
 
                 ~label {
-                    font-size: 16px;
+                    font-size: 8px;
                     right: 0;
                     color: $primaryColor;
                     bottom: calc(100% + 0em);
@@ -1078,7 +1084,7 @@ form#sample {
 
         textarea.style1 {
             ~label.top {
-                font-size: 16px;
+                font-size: 8px;
                 bottom: calc(100% + .5em);
                 transform: translateY(50%);
                 right: 0;
@@ -1087,7 +1093,7 @@ form#sample {
 
         textarea.style2 {
             ~label.top {
-                font-size: 16px;
+                font-size: 8px;
                 bottom: calc(100% + 1em);
                 transform: translateY(50%);
                 right: 0;
@@ -1103,14 +1109,14 @@ form#sample {
             display: flex;
             @include flex(row, flex-start, center, nowrap, "");
             transition: all .2s linear;
-            color: lighten($greyColor2, 25%);
+            color: lighten($textGrey, 25%);
 
             i {
-                font-size: $font-m;
+                font-size: $fontM;
             }
 
             p {
-                font-size: $font-m - .1em;
+                font-size: $fontM - .1em;
                 transform: translateX(-.3em);
             }
         }
@@ -1125,7 +1131,6 @@ form#sample {
             transition: all .2s linear;
         }
     }
-
     .inputWrapper.range {
         width: 100%;
         height: auto;
@@ -1133,7 +1138,7 @@ form#sample {
         display: flex;
         @include flex(column, flex-start, center, nowrap, "");
         h4 {
-            font-size: $font-l;
+            font-size: $fontL;
             font-weight: 700;
             color: $darkColor;
         }
@@ -1193,23 +1198,22 @@ form#sample {
             height: auto;
             margin-top: $dist2;
             text-align: center ;
-            color: $greyColor2;
-            font-size: $font-m;
+            color: $textGrey;
+            font-size: $fontM;
         }
     }
     button[type="submit"].final {
         width: auto;
         height: auto;
         padding: $dist1 $dist3;
-        margin: $dist2 auto;
+        margin-top: $dist1 ;
         border-radius: $dist3;
-        font-size: $font-l;
+        font-size: $fontM;
         background-color: $primaryColor;
         color: $whiteColor2;
         cursor: pointer;
         border: 1.2px solid transparent;
         transition: all .3s linear;
-
         &:hover {
             color: $primaryColor;
             background-color: white;

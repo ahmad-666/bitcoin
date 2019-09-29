@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body class="bg">
+    <form novalidate id="login" name="login" class="validate" method="GET" action="#!" enctype="text/plain">
+        <a id="logo" href="./index.html">
+            <img src="../assets/imgs/logoDark.png" alt="logoImg">
+        </a>
+        <h4>ورود به حساب کاربری</h4>
+        <div class="inputWrapper text">
+            <input type="email" id="email" name="email" class="style1 labelHandler validate" required>
+            <label for="email">
+                <i class="fas fa-envelope icon"></i>
+                <p>پست الکترونیکی</p>
+            </label>
+            <span class="line"></span>
+            <div class="msg">
+                <p>پست الکترونیکی صحیح نیست</p>
+                <i class="fas fa-caret-up"></i>
+            </div>
+        </div>
+        <div class="inputWrapper text">
+            <input type="password" id="password" name="password" class="style1 labelHandler validate" required>
+            <label for="password">
+                <i class="fas fa-lock icon"></i>
+                <p>رمز ورود</p>
+            </label>
+            <span class="line"></span>
+            <div class="msg">
+                <p>رمز ورود صحیح نیست</p>
+                <i class="fas fa-caret-up"></i>
+            </div>
+        </div>
+        <a id="forgetLink" href="./forget-password.html">رمز عبور را فراموش کرده ام</a>
+        <div class="inputWrapper checkboxes rememberMe">
+            <div class="checkbox">
+                <input type="checkbox" id="rememberMe" name="rememberMe" class="style1" value="checkbox1">
+                <label for="rememberMe">
+                    <span class="rect">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    <p>مرا بخاطر بسپار</p>
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="final">ورود</button>
+        <a id="signupLink" href="./signup.html">ساخت حساب کاربری جدید</a>
+    </form>
+</body>
+
+</html>
