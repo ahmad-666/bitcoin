@@ -22,7 +22,7 @@ form#login,form#forgetPassword,form#signup {
     h4 {
         font-size: $fontL;
         font-weight: 700;
-        color: $darkColor;
+        color: $textDark;
         margin-top: $dist1 ;
     }
     a#forgetLink,a#signupLink{
@@ -53,7 +53,7 @@ form#login,form#forgetPassword,form#signup {
             line-height: 2.5em;
             padding: 0 $dist1;
             font-size: $fontM;
-            color: $darkColor;
+            color: $textDark;
             transition: all .2s linear;
             &::placeholder {
                 color: $textGrey;
@@ -211,7 +211,7 @@ form#login,form#forgetPassword,form#signup {
             height: 2.5em;
             line-height: 2.5em;
             padding: 0 $dist1;
-            color: $darkColor;
+            color: $textDark;
             font-size: $fontM;
             cursor: pointer;
             transition: all .2s linear;
@@ -388,7 +388,7 @@ form#login,form#forgetPassword,form#signup {
                 line-height: 2.5em;
                 padding: 0 $dist1;
                 font-size: $fontM;
-                color: $darkColor;
+                color: $textDark;
                 transition: all .2s linear;
                 cursor: pointer;
                 background-color: white;
@@ -415,7 +415,7 @@ form#login,form#forgetPassword,form#signup {
             height: 2.5em;
             line-height: 2.5em;
             padding: 0 $dist1;
-            color: $darkColor;
+            color: $textDark;
             font-size: $fontM;
             cursor: pointer;
             transition: all .2s linear;
@@ -592,7 +592,7 @@ form#login,form#forgetPassword,form#signup {
                 line-height: 2.5em;
                 padding: 0 $dist1;
                 font-size: $fontM;
-                color: $darkColor;
+                color: $textDark;
                 transition: all .2s linear;
                 cursor: pointer;
                 background-color: white;
@@ -619,7 +619,7 @@ form#login,form#forgetPassword,form#signup {
             height: 2.5em;
             line-height: 2.5em;
             padding: 0 $dist1;
-            color: $darkColor;
+            color: $textDark;
             font-size: $fontM;
             border-radius: $dist3;
             border: 1.2px solid lighten($textGrey, 25%);
@@ -711,7 +711,7 @@ form#login,form#forgetPassword,form#signup {
         .decrease {
             font-size: $fontM;
             cursor: pointer;
-            color: lighten($darkColor, 5%);
+            color: lighten($textDark, 5%);
             // color: darken($textGrey,15%) ;      
         }
 
@@ -720,7 +720,7 @@ form#login,form#forgetPassword,form#signup {
             height: 2em;
             text-align: center;
             line-height: 2em;
-            color: $darkColor;
+            color: $textDark;
             font-size: $fontM;
             border: 1.2px solid lighten($textGrey, 20%);
 
@@ -731,13 +731,13 @@ form#login,form#forgetPassword,form#signup {
         }
     }
     .inputWrapper.checkboxes {
-        width: auto;
+        width: 90%;
         height: auto;
         display: flex;
         @include flex(column, flex-start, flex-start, nowrap, "");
         margin-top: $dist3;
         .checkbox {
-            width: calc((80vw - (4 * 2.4em)) / 4);
+            width: 100%;
             height: 2.5em;
             padding-right: $dist1;
             input[type="checkbox"] {
@@ -824,7 +824,7 @@ form#login,form#forgetPassword,form#signup {
         }
     }
     .inputWrapper.checkboxes.rememberMe{
-        margin-right: 10% ;
+        margin-right: 0% ;
     }
     .inputWrapper.radios {
         width: auto;
@@ -1002,7 +1002,7 @@ form#login,form#forgetPassword,form#signup {
         textarea {
             width: calc((80vw - (2 * 3.6em)) / 2);
             font-size: $fontM;
-            color: $darkColor;
+            color: $textDark;
             padding: $dist1;
             line-height: $dist3;
             transition: all .2s linear;
@@ -1140,7 +1140,7 @@ form#login,form#forgetPassword,form#signup {
         h4 {
             font-size: $fontL;
             font-weight: 700;
-            color: $darkColor;
+            color: $textDark;
         }
         .ranger {
             width: 100% ;
