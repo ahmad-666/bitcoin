@@ -18,9 +18,5 @@
     text-decoration: none ;
     color: $darkColor ;
 }
-@media screen and (max-width: 840px){
-    #copyright{font-size: 16px ;}
-}
-@media screen and (max-width: 330px){
-    #copyright{font-size: 12px ;}
-}
+@include resizeTablet(#copyright) ;
+@include resizeMobile(#copyright) ;

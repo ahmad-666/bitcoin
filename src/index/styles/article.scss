@@ -46,7 +46,7 @@
                 font-size: $fontM + .2em ;
                 color: $textDark ;
                 font-weight: 700 ;
-                @include multiEllipse(1,$dist2 + .5em,$textDark) ;
+                @include multiEllipse(2,$dist2 + .5em,$textDark) ;
             }
             .date{
                 font-size: $fontS ;
@@ -66,4 +66,34 @@
 }
 #articles{
     margin-top: $dist3 * 2 ;
+}
+@include resizeTablet(#news) ;
+@include resizeMobile(#news) ;
+@include resizeTablet(#articles) ;
+@include resizeMobile(#articles) ;
+@include mediaQ-w(750px){
+    #news,#articles{
+        width: 95% ;
+    }
+}
+@include mediaQ-w(450px){
+    #news,#articles{   
+        @include flex(column,flex-start,center,nowrap,"") ;  
+        .article{
+            @include flex(column,flex-start,center,nowrap,"") ;
+            img{
+                width: 80% ;
+                height: 22em;
+            }
+            .content{
+                @include flex(column,flex-start,center,nowrap,"") ;
+                h4{
+                    width: auto ;
+                    margin-left: auto ;
+                    margin-right: auto ;
+                    text-align: center ;                    
+                }
+            }         
+        }
+    }
 }

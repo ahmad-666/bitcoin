@@ -85,3 +85,21 @@ footer{
         }
     }
 }
+@include resizeTablet(footer) ;
+@include resizeMobile(footer) ;
+@include mediaQ-w(450px){
+    footer{
+        .col.socials{
+            width: 100% ;
+            margin-top: $dist2 ;
+        }
+    }
+}
+@include mediaQ-w(380px){
+    footer{
+        .col{
+            width: 100% ;
+            margin-top: $dist2 ;
+        }
+    }
+}

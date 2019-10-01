@@ -94,6 +94,51 @@
     opacity: 0;
     visibility: hidden ;
 }
+@mixin scrollArrows{
+    position: relative;
+    .arrows{
+        display: none ;
+        width: auto ;
+        height: auto;
+        @include flex(row,flex-start,center,nowrap,"") ;
+        position: absolute ;
+        left: 0;
+        bottom: 105% ;
+        i{
+            font-size: $fontL ;
+            color: $primaryColor ;
+            margin-right: .3em ;
+            animation: arrowAnime .6s linear infinite alternate ;
+            &:nth-child(1){animation-delay: 0 ;}
+            &:nth-child(2){animation-delay: .3s ;}
+            &:nth-child(3){animation-delay: .6s ;      
+            }         
+        }
+        @keyframes arrowAnime {
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }     
+    }
+    .arrows.show{display: flex ;}
+}
+@mixin resizeTablet($wrapper){
+    @media screen and (max-width:900px){
+        #{$wrapper}{
+            font-size: 8px ;
+            @content ;
+        }
+    }
+    
+}
+@mixin resizeMobile($wrapper){
+    @media screen and (max-width:600px){
+        #{$wrapper}{
+            font-size: 6px ;
+            @content ;
+        }
+    }
+    
+}
 @mixin mediaQ-w($maxWidth) {
     @media screen and (max-width: $maxWidth){
         @content ;

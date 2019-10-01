@@ -1,3 +1,2 @@
-import util from '../../utilities/utilities.js' ;
-let header = document.querySelector('header') ;
-new util.AnimateCounter(header.querySelector('.animateCounter')) ;
+import topSlider from '../../utilities/scripts/topSlider.js' ;
+new topSlider.topSlider(document.querySelector('header .topSlider')) ;

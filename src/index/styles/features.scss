@@ -50,3 +50,24 @@
     }
     
 }
+@include mediaQ-w(930px){
+    #whyBitcoin{
+        width: 100% ;
+    }
+}
+@include resizeTablet(#whyBitcoin) ;
+@include resizeMobile(#whyBitcoin) ;
+@include mediaQ-w(450px){
+    #whyBitcoin{
+        .features{
+            width: 80% ;
+            .feature{
+                width: 100% ;
+                &:nth-child(2){
+                    margin-top: $dist2 ;
+                    margin-right: 0 ;
+                }
+            }
+        }
+    }
+}
