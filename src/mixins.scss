@@ -10,12 +10,11 @@
     background: url($url) $pos $repeat ;
     background-size: $size ;
 }
-// @mixin ellipse{
-//     white-space: nowrap ;
-//     overflow: hidden;
-//     text-overflow: ellipsis ;
-// }
-// we should just use multieEllipse not single Ellipse anymore
+@mixin ellipse{
+     white-space: nowrap ;
+     overflow: hidden;
+     text-overflow: ellipsis ;
+}
 @mixin multiEllipse($lineNum,$lineHeight,$ellipseColor){
     position: relative ;
     overflow: hidden;
@@ -34,17 +33,6 @@
     .ellipse.show{
         display: block ;
     }
-	// let ellipses = document.querySelectorAll('.ellipse') ;
-    // ellipses.forEach(ellipse => {
-    //     let parent = ellipse.parentElement ;
-    //     let threshold = parseInt(window.getComputedStyle(parent,null).getPropertyValue('max-height'));
-    //     if(parent.scrollHeight > threshold) {
-    //         ellipse.classList.add('show') ;
-    //     }
-    //     else{
-    //         parent.style.textAlign = 'center' ;
-    //     }
-    // })
 }
 @mixin fullSize{
     width: 100% ;
