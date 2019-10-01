@@ -32,3 +32,6 @@
     }
 
 }
+@include resizeTablet(#breadcrumb) ;
+@include resizeMobile(#breadcrumb) ;
+

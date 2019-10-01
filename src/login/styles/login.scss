@@ -2,7 +2,10 @@
 @import '../../colors.scss' ;
 @import '../../mixins.scss' ;
 @import '../../utilities/styles/form.scss' ;
-.something{
-
+@include resizeTablet(form+#login) ;
+@include resizeMobile(form+#login) ;
+@include mediaQ-w(300px){
+    form#login{
+        width: 90% ;
+    }
 }
-@include resizeTablet(form#login) ;

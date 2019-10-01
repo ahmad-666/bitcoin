@@ -17,3 +17,10 @@
         line-height: $dist2 + .5em ; 
     }
 }
+@include resizeTablet(#rules) ;
+@include mediaQ-w(750px) {
+    #rules{
+        width: 95% ;
+    }
+}
+@include resizeMobile(#rules) ;

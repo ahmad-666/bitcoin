@@ -108,3 +108,33 @@ main{
         }
     }
 }
+@include resizeTablet(main){
+    @include flex(column,flex-start,center,nowrap,"") ;
+    aside{
+        width: 100% ;
+        margin-top: $dist3 ;
+        margin-right: 0 ;
+        #popular{
+            .article{
+                .imgWrapper{         
+                    img{
+                        height: 25em;
+                    }
+                }
+            }
+        }
+        #similars{
+            .article{
+                .imgWrapper{
+                    width: 20em ;                
+                    img{
+                        height: 20em;
+                    }
+                }          
+            }
+        }
+    }
+}
+@include resizeMobile(main){
+    
+}

@@ -9,6 +9,7 @@ import '../index/styles/copyright.scss' ;
 //load scripts
 import '../index/scripts/nav.js' ;
 import '../index/scripts/header.js' ;
+import '../articles/scripts/articles.js' ;
 import '../article/scripts/aside.js' ;
 //load videos 
 

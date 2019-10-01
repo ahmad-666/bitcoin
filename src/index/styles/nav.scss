@@ -64,30 +64,28 @@ header{
     }
 }
 @include resizeTablet(header) {
-    header{
-        nav{
-            ul#menu{
-                li.logo{
-                    a{
-                        font-size: 8px ;
-                    }              
-                }
+    nav{
+        ul#menu{
+            li.logo{
+                a{
+                    font-size: 8px ;
+                }              
             }
         }
-    } 
+    }
+    
 }
 @include resizeMobile(header) {
-    header{
-        nav{
-            ul#menu{
-                li.logo{
-                    a{
-                        font-size: 6px ;
-                    }              
-                }
+    nav{
+        ul#menu{
+            padding: $dist2 $dist3 ;
+            li.logo{
+                a{
+                    font-size: 6px ;
+                }              
             }
         }
-    } 
+    }
 }
 @include mediaQ-w(500px){
     header{

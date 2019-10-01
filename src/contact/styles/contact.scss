@@ -30,8 +30,9 @@
             height: auto;
             margin-top: $dist1 ;
             display: flex ;
-            @include flex(row,flex-start,center,wrap,flex-start) ;
+            @include flex(row,flex-start,center,nowrap,"") ;
             i{
+                flex-shrink: 0 ;
                 width: 30px ;
                 text-align: center ;
                 font-size: $fontM ;
@@ -39,6 +40,7 @@
                 transform: translateY(8%) ;
             }
             p{
+                
                 font-size: $fontM - .2em ;
                 color: darken($textGrey,10%) ;
                 transform: translateX(-.5em) ;
@@ -73,6 +75,35 @@
                         background-color: $textWhite ;
                         color: lighten($primaryColor,8%) ;
                     }
+                }
+            }
+        }
+    }
+}
+@include mediaQ-w(1200px){
+    #contact{
+        width: 80% ;
+    }
+}
+@include resizeTablet(#contact) ;
+@include mediaQ-w(750px) {
+    #contact{
+        width: 95% ;
+    }
+}
+@include resizeMobile(#contact) ;
+@include mediaQ-w(475px){
+    #contact{
+        form#adminContact{
+            .row{
+                .inputWrapper.text{
+                    width: 90% ;
+                }
+            }
+            .inputWrapper.textarea{
+                width: 90% ;
+                textarea.style1{
+                    height: 12em;
                 }
             }
         }

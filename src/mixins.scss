@@ -121,14 +121,24 @@
     }
     .arrows.show{display: flex ;}
 }
+
+// @include resizeTablet(#container) ;
+// @include resizeTablet(form+#login) ;
+// @include resizeTablet(#wrapper) {
+//     .something{color: red ;}
+// }
+// @include mediaQ-w(300px){
+//     #wrapper{
+//         width: 90% ;
+//     }
+// }
 @mixin resizeTablet($wrapper){
     @media screen and (max-width:900px){
         #{$wrapper}{
             font-size: 8px ;
             @content ;
         }
-    }
-    
+    }  
 }
 @mixin resizeMobile($wrapper){
     @media screen and (max-width:600px){
@@ -137,20 +147,13 @@
             @content ;
         }
     }
-    
 }
 @mixin mediaQ-w($maxWidth) {
-    @media screen and (max-width: $maxWidth){
-        @content ;
-    }
+    @media screen and (max-width: $maxWidth){@content ;}
 }
 @mixin mediaQ-h($maxHeight) {
-    @media screen and (max-height: $maxHeight){
-        @content ;
-    }
+    @media screen and (max-height: $maxHeight){@content ;}
 }
 @mixin mediaQ-wh($maxWidth,$maxHeight) {
-    @media screen and (max-width: $maxWidth) and (max-height: $maxHeight){
-        @content ;
-    }
+    @media screen and (max-width: $maxWidth) and (max-height: $maxHeight){@content ;}
 }
