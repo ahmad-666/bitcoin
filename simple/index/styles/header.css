@@ -14,7 +14,7 @@ header nav {
 header nav ul#menu {
   width: 100%;
   height: 100%;
-  padding: 0.75em 3em;
+  padding: 1.5em 3em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -71,6 +71,7 @@ header nav ul#menu li.logo {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 0.75em;
+  height: 100%;
 }
 
 header nav ul#menu li.logo a {
@@ -80,8 +81,8 @@ header nav ul#menu li.logo a {
 }
 
 header nav ul#menu li.logo a img {
-  width: 12em;
-  height: 3em;
+  width: 6em;
+  height: 100%;
 }
 
 header nav ul#menu li#mobile {
@@ -244,9 +245,17 @@ header nav.fix ul#menu li a {
   position: absolute;
 }
 
-.topSlider .slide img {
+.topSlider .slide img:not(.logo) {
   width: 100%;
   height: 100%;
+}
+
+.topSlider .slide img.logo {
+  width: 7em;
+  height: 7em;
+  position: absolute;
+  right: 1.5em;
+  bottom: 1.5em;
 }
 
 .topSlider .slide p {

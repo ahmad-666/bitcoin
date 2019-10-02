@@ -14,7 +14,7 @@ header{
         ul#menu{
             width: 100% ;
             height: 100%;
-            padding: $dist1 $dist3 ;
+            padding: $dist2 $dist3 ;
             display: flex ;
             @include flex(row,flex-start,center,nowrap,"") ;
             position: relative ;
@@ -33,13 +33,14 @@ header{
             li.logo{
                 @include center-y ;
                 left: $dist1;
+                height: 100%;
                 a{
                     font-size: 10px ;
                     width: auto ;
                     height: auto;
                     img{
-                        width: $dist4 * 2 ;
-                        height: $dist2 * 2;
+                        width: 6em ;
+                        height: 100% ;
                     }
                 }
                

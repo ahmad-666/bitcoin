@@ -18,9 +18,17 @@
   position: absolute;
 }
 
-.topSlider .slide img {
+.topSlider .slide img:not(.logo) {
   width: 100%;
   height: 100%;
+}
+
+.topSlider .slide img.logo {
+  width: 7em;
+  height: 7em;
+  position: absolute;
+  right: 1.5em;
+  bottom: 1.5em;
 }
 
 .topSlider .slide p {
