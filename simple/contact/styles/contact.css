@@ -1,0 +1,1173 @@
+form#login, form#forgetPassword, form#signup, form#adminContact {
+  width: 80%;
+  height: auto;
+  margin: 3em auto 0 auto;
+  padding: 1.5em 2.5em;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1em 0.01em rgba(70, 69, 85, 0.3);
+          box-shadow: 0 0 1em 0.01em rgba(70, 69, 85, 0.3);
+  border-radius: 1.5em;
+  width: 40em;
+  height: auto;
+  padding: 1.5em;
+  margin: 6em auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  overflow: hidden;
+}
+
+form#login #logo, form#forgetPassword #logo, form#signup #logo, form#adminContact #logo {
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+form#login #logo img, form#forgetPassword #logo img, form#signup #logo img, form#adminContact #logo img {
+  width: 60%;
+  height: 4em;
+}
+
+form#login h4, form#forgetPassword h4, form#signup h4, form#adminContact h4 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #2d2d31;
+  margin-top: 0.75em;
+}
+
+form#login a#forgetLink,
+form#login a#signupLink, form#forgetPassword a#forgetLink,
+form#forgetPassword a#signupLink, form#signup a#forgetLink,
+form#signup a#signupLink, form#adminContact a#forgetLink,
+form#adminContact a#signupLink {
+  font-size: 1.4em;
+  color: #90909b;
+  margin-top: 1.5em;
+}
+
+form#login a#forgetLink, form#forgetPassword a#forgetLink, form#signup a#forgetLink, form#adminContact a#forgetLink {
+  width: 100%;
+  text-align: right;
+  margin-right: 10%;
+}
+
+form#login .inputs, form#forgetPassword .inputs, form#signup .inputs, form#adminContact .inputs {
+  width: 100%;
+  height: auto;
+  margin-top: 0.75em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+form#login .inputWrapper.text, form#forgetPassword .inputWrapper.text, form#signup .inputWrapper.text, form#adminContact .inputWrapper.text {
+  width: 90%;
+  height: auto;
+  position: relative;
+  margin-top: 3em;
+}
+
+form#login .inputWrapper.text input, form#forgetPassword .inputWrapper.text input, form#signup .inputWrapper.text input, form#adminContact .inputWrapper.text input {
+  width: 100%;
+  height: 2.5em;
+  line-height: 2.5em;
+  padding: 0 0.75em;
+  font-size: 1.6em;
+  color: #2d2d31;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#login .inputWrapper.text input::-webkit-input-placeholder, form#forgetPassword .inputWrapper.text input::-webkit-input-placeholder, form#signup .inputWrapper.text input::-webkit-input-placeholder, form#adminContact .inputWrapper.text input::-webkit-input-placeholder {
+  color: #90909b;
+  font-size: 1.6em;
+}
+
+form#login .inputWrapper.text input:-moz-placeholder, form#forgetPassword .inputWrapper.text input:-moz-placeholder, form#signup .inputWrapper.text input:-moz-placeholder, form#adminContact .inputWrapper.text input:-moz-placeholder {
+  color: #90909b;
+  font-size: 1.6em;
+}
+
+form#login .inputWrapper.text input::-moz-placeholder, form#forgetPassword .inputWrapper.text input::-moz-placeholder, form#signup .inputWrapper.text input::-moz-placeholder, form#adminContact .inputWrapper.text input::-moz-placeholder {
+  color: #90909b;
+  font-size: 1.6em;
+}
+
+form#login .inputWrapper.text input:-ms-input-placeholder, form#forgetPassword .inputWrapper.text input:-ms-input-placeholder, form#signup .inputWrapper.text input:-ms-input-placeholder, form#adminContact .inputWrapper.text input:-ms-input-placeholder {
+  color: #90909b;
+  font-size: 1.6em;
+}
+
+form#login .inputWrapper.text input::-ms-input-placeholder, form#forgetPassword .inputWrapper.text input::-ms-input-placeholder, form#signup .inputWrapper.text input::-ms-input-placeholder, form#adminContact .inputWrapper.text input::-ms-input-placeholder {
+  color: #90909b;
+  font-size: 1.6em;
+}
+
+form#login .inputWrapper.text input::placeholder, form#forgetPassword .inputWrapper.text input::placeholder, form#signup .inputWrapper.text input::placeholder, form#adminContact .inputWrapper.text input::placeholder {
+  color: #90909b;
+  font-size: 1.6em;
+}
+
+form#login .inputWrapper.text input.style1, form#forgetPassword .inputWrapper.text input.style1, form#signup .inputWrapper.text input.style1, form#adminContact .inputWrapper.text input.style1 {
+  border: none;
+  border-bottom: 1.2px solid #d3d3d7;
+}
+
+form#login .inputWrapper.text input.style1:focus ~ label, form#forgetPassword .inputWrapper.text input.style1:focus ~ label, form#signup .inputWrapper.text input.style1:focus ~ label, form#adminContact .inputWrapper.text input.style1:focus ~ label {
+  color: #5336B9;
+  font-size: 8px;
+  bottom: -webkit-calc(100% + .5em);
+  bottom: -moz-calc(100% + .5em);
+  bottom: calc(100% + .5em);
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 0;
+}
+
+form#login .inputWrapper.text input.style1:focus ~ .line, form#forgetPassword .inputWrapper.text input.style1:focus ~ .line, form#signup .inputWrapper.text input.style1:focus ~ .line, form#adminContact .inputWrapper.text input.style1:focus ~ .line {
+  width: 100%;
+}
+
+form#login .inputWrapper.text input.style2, form#forgetPassword .inputWrapper.text input.style2, form#signup .inputWrapper.text input.style2, form#adminContact .inputWrapper.text input.style2 {
+  border: 1.2px solid #d3d3d7;
+  border-radius: 3em;
+}
+
+form#login .inputWrapper.text input.style2:focus, form#forgetPassword .inputWrapper.text input.style2:focus, form#signup .inputWrapper.text input.style2:focus, form#adminContact .inputWrapper.text input.style2:focus {
+  border: 1.2px solid #5336B9;
+}
+
+form#login .inputWrapper.text input.style2:focus ~ label, form#forgetPassword .inputWrapper.text input.style2:focus ~ label, form#signup .inputWrapper.text input.style2:focus ~ label, form#adminContact .inputWrapper.text input.style2:focus ~ label {
+  color: #5336B9;
+  font-size: 8px;
+  bottom: -webkit-calc(100% + 1em);
+  bottom: -moz-calc(100% + 1em);
+  bottom: calc(100% + 1em);
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 0;
+}
+
+form#login .inputWrapper.text input.style2:focus ~ .line, form#forgetPassword .inputWrapper.text input.style2:focus ~ .line, form#signup .inputWrapper.text input.style2:focus ~ .line, form#adminContact .inputWrapper.text input.style2:focus ~ .line {
+  width: 0%;
+}
+
+form#login .inputWrapper.text input.style1.error, form#forgetPassword .inputWrapper.text input.style1.error, form#signup .inputWrapper.text input.style1.error, form#adminContact .inputWrapper.text input.style1.error {
+  border-bottom: 1.2px solid #ea6161;
+}
+
+form#login .inputWrapper.text input.style1.error ~ label, form#forgetPassword .inputWrapper.text input.style1.error ~ label, form#signup .inputWrapper.text input.style1.error ~ label, form#adminContact .inputWrapper.text input.style1.error ~ label {
+  color: #ea6161;
+}
+
+form#login .inputWrapper.text input.style1.error ~ .line, form#forgetPassword .inputWrapper.text input.style1.error ~ .line, form#signup .inputWrapper.text input.style1.error ~ .line, form#adminContact .inputWrapper.text input.style1.error ~ .line {
+  background-color: #ea6161;
+}
+
+form#login .inputWrapper.text input.style2.error, form#forgetPassword .inputWrapper.text input.style2.error, form#signup .inputWrapper.text input.style2.error, form#adminContact .inputWrapper.text input.style2.error {
+  border: 1.2px solid #ea6161;
+}
+
+form#login .inputWrapper.text input.style2.error ~ label, form#forgetPassword .inputWrapper.text input.style2.error ~ label, form#signup .inputWrapper.text input.style2.error ~ label, form#adminContact .inputWrapper.text input.style2.error ~ label {
+  color: #ea6161;
+}
+
+form#login .inputWrapper.text label, form#forgetPassword .inputWrapper.text label, form#signup .inputWrapper.text label, form#adminContact .inputWrapper.text label {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 0.75em;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  color: #c6c6cb;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#login .inputWrapper.text label .icon, form#forgetPassword .inputWrapper.text label .icon, form#signup .inputWrapper.text label .icon, form#adminContact .inputWrapper.text label .icon {
+  font-size: 1.6em;
+}
+
+form#login .inputWrapper.text label p, form#forgetPassword .inputWrapper.text label p, form#signup .inputWrapper.text label p, form#adminContact .inputWrapper.text label p {
+  font-size: 1.5em;
+  -webkit-transform: translateX(-0.3em);
+     -moz-transform: translateX(-0.3em);
+      -ms-transform: translateX(-0.3em);
+          transform: translateX(-0.3em);
+}
+
+form#login .inputWrapper.text input.style1 ~ label.top, form#forgetPassword .inputWrapper.text input.style1 ~ label.top, form#signup .inputWrapper.text input.style1 ~ label.top, form#adminContact .inputWrapper.text input.style1 ~ label.top {
+  font-size: 8px;
+  bottom: -webkit-calc(100% + .5em);
+  bottom: -moz-calc(100% + .5em);
+  bottom: calc(100% + .5em);
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 0;
+}
+
+form#login .inputWrapper.text input.style2 ~ label.top, form#forgetPassword .inputWrapper.text input.style2 ~ label.top, form#signup .inputWrapper.text input.style2 ~ label.top, form#adminContact .inputWrapper.text input.style2 ~ label.top {
+  font-size: 8px;
+  bottom: -webkit-calc(100% + 1em);
+  bottom: -moz-calc(100% + 1em);
+  bottom: calc(100% + 1em);
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 0;
+}
+
+form#login .inputWrapper.text .line, form#forgetPassword .inputWrapper.text .line, form#signup .inputWrapper.text .line, form#adminContact .inputWrapper.text .line {
+  width: 0%;
+  height: 1.2px;
+  background-color: #5336B9;
+  position: absolute;
+  right: 0;
+  top: -webkit-calc(100% - .6px);
+  top: -moz-calc(100% - .6px);
+  top: calc(100% - .6px);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#login .inputWrapper.text .msg, form#forgetPassword .inputWrapper.text .msg, form#signup .inputWrapper.text .msg, form#adminContact .inputWrapper.text .msg {
+  width: auto;
+  height: auto;
+  border-radius: 3em;
+  padding: 0.75em 1.5em;
+  position: relative;
+  background-color: #ea6161;
+  position: absolute;
+  right: 0;
+  top: 115%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#login .inputWrapper.text .msg p, form#forgetPassword .inputWrapper.text .msg p, form#signup .inputWrapper.text .msg p, form#adminContact .inputWrapper.text .msg p {
+  color: #fbfbfb;
+  font-size: 1.4em;
+}
+
+form#login .inputWrapper.text .msg i, form#forgetPassword .inputWrapper.text .msg i, form#signup .inputWrapper.text .msg i, form#adminContact .inputWrapper.text .msg i {
+  font-size: 2.4em;
+  color: #ea6161;
+  position: absolute;
+  right: 1.5em;
+  top: -webkit-calc(0% - .6em);
+  top: -moz-calc(0% - .6em);
+  top: calc(0% - .6em);
+}
+
+form#login .inputWrapper.text .msg.show, form#forgetPassword .inputWrapper.text .msg.show, form#signup .inputWrapper.text .msg.show, form#adminContact .inputWrapper.text .msg.show {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+form#login .inputWrapper.checkboxes, form#forgetPassword .inputWrapper.checkboxes, form#signup .inputWrapper.checkboxes, form#adminContact .inputWrapper.checkboxes {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  margin-top: 3em;
+}
+
+form#login .inputWrapper.checkboxes .checkbox, form#forgetPassword .inputWrapper.checkboxes .checkbox, form#signup .inputWrapper.checkboxes .checkbox, form#adminContact .inputWrapper.checkboxes .checkbox {
+  width: 100%;
+  height: 2.5em;
+  padding-right: 0.75em;
+}
+
+form#login .inputWrapper.checkboxes .checkbox input[type="checkbox"], form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"], form#signup .inputWrapper.checkboxes .checkbox input[type="checkbox"], form#adminContact .inputWrapper.checkboxes .checkbox input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+form#login .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect, form#signup .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect, form#adminContact .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect {
+  width: 2.3em;
+  height: 1em;
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  border-left: 1.2px solid #5336B9;
+  border-bottom: 1.2px solid #5336B9;
+  -webkit-transform: translateY(-0.55em) rotate(-45deg);
+     -moz-transform: translateY(-0.55em) rotate(-45deg);
+      -ms-transform: translateY(-0.55em) rotate(-45deg);
+          transform: translateY(-0.55em) rotate(-45deg);
+}
+
+form#login .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p, form#signup .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p, form#adminContact .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p {
+  color: #5336B9;
+}
+
+form#login .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect, form#signup .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect, form#adminContact .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect {
+  border: 1px solid transparent;
+  background-color: #5336B9;
+}
+
+form#login .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i, form#signup .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i, form#adminContact .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i {
+  opacity: 1;
+}
+
+form#login .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p, form#signup .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p, form#adminContact .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p {
+  color: #5336B9;
+}
+
+form#login .inputWrapper.checkboxes .checkbox label, form#forgetPassword .inputWrapper.checkboxes .checkbox label, form#signup .inputWrapper.checkboxes .checkbox label, form#adminContact .inputWrapper.checkboxes .checkbox label {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  line-height: 2.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+form#login .inputWrapper.checkboxes .checkbox label .rect, form#forgetPassword .inputWrapper.checkboxes .checkbox label .rect, form#signup .inputWrapper.checkboxes .checkbox label .rect, form#adminContact .inputWrapper.checkboxes .checkbox label .rect {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 2em;
+  height: 2em;
+  border: 1px solid #696975;
+  position: relative;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  border-radius: 0.55em;
+}
+
+form#login .inputWrapper.checkboxes .checkbox label .rect i, form#forgetPassword .inputWrapper.checkboxes .checkbox label .rect i, form#signup .inputWrapper.checkboxes .checkbox label .rect i, form#adminContact .inputWrapper.checkboxes .checkbox label .rect i {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+     -moz-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  opacity: 0;
+  font-size: 1.6em;
+  color: #fbfbfb;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#login .inputWrapper.checkboxes .checkbox label p, form#forgetPassword .inputWrapper.checkboxes .checkbox label p, form#signup .inputWrapper.checkboxes .checkbox label p, form#adminContact .inputWrapper.checkboxes .checkbox label p {
+  max-width: -webkit-calc(100% - .5em - 1.2em - .5em);
+  max-width: -moz-calc(100% - .5em - 1.2em - .5em);
+  max-width: calc(100% - .5em - 1.2em - .5em);
+  position: relative;
+  overflow: hidden;
+  line-height: 2em;
+  max-height: 2em;
+  text-align: justify;
+  padding-left: 1em;
+  padding-right: 0;
+  font-size: 1.6em;
+  color: #696975;
+  margin-right: .3em;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#login .inputWrapper.checkboxes .checkbox label p .ellipse, form#forgetPassword .inputWrapper.checkboxes .checkbox label p .ellipse, form#signup .inputWrapper.checkboxes .checkbox label p .ellipse, form#adminContact .inputWrapper.checkboxes .checkbox label p .ellipse {
+  color: #2d2d31;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+
+form#login .inputWrapper.checkboxes .checkbox label p .ellipse.show, form#forgetPassword .inputWrapper.checkboxes .checkbox label p .ellipse.show, form#signup .inputWrapper.checkboxes .checkbox label p .ellipse.show, form#adminContact .inputWrapper.checkboxes .checkbox label p .ellipse.show {
+  display: block;
+}
+
+form#login .inputWrapper.checkboxes.rememberMe, form#forgetPassword .inputWrapper.checkboxes.rememberMe, form#signup .inputWrapper.checkboxes.rememberMe, form#adminContact .inputWrapper.checkboxes.rememberMe {
+  margin-right: 0%;
+}
+
+form#login .inputWrapper.textarea, form#forgetPassword .inputWrapper.textarea, form#signup .inputWrapper.textarea, form#adminContact .inputWrapper.textarea {
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form#login .inputWrapper.textarea textarea, form#forgetPassword .inputWrapper.textarea textarea, form#signup .inputWrapper.textarea textarea, form#adminContact .inputWrapper.textarea textarea {
+  width: -webkit-calc((80vw - (2 * 3.6em)) / 2);
+  width: -moz-calc((80vw - (2 * 3.6em)) / 2);
+  width: calc((80vw - (2 * 3.6em)) / 2);
+  font-size: 1.6em;
+  color: #2d2d31;
+  padding: 0.75em;
+  line-height: 1.5em;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  resize: none;
+}
+
+form#login .inputWrapper.textarea textarea::-webkit-input-placeholder, form#forgetPassword .inputWrapper.textarea textarea::-webkit-input-placeholder, form#signup .inputWrapper.textarea textarea::-webkit-input-placeholder, form#adminContact .inputWrapper.textarea textarea::-webkit-input-placeholder {
+  font-size: 1.6em;
+  color: #90909b;
+}
+
+form#login .inputWrapper.textarea textarea:-moz-placeholder, form#forgetPassword .inputWrapper.textarea textarea:-moz-placeholder, form#signup .inputWrapper.textarea textarea:-moz-placeholder, form#adminContact .inputWrapper.textarea textarea:-moz-placeholder {
+  font-size: 1.6em;
+  color: #90909b;
+}
+
+form#login .inputWrapper.textarea textarea::-moz-placeholder, form#forgetPassword .inputWrapper.textarea textarea::-moz-placeholder, form#signup .inputWrapper.textarea textarea::-moz-placeholder, form#adminContact .inputWrapper.textarea textarea::-moz-placeholder {
+  font-size: 1.6em;
+  color: #90909b;
+}
+
+form#login .inputWrapper.textarea textarea:-ms-input-placeholder, form#forgetPassword .inputWrapper.textarea textarea:-ms-input-placeholder, form#signup .inputWrapper.textarea textarea:-ms-input-placeholder, form#adminContact .inputWrapper.textarea textarea:-ms-input-placeholder {
+  font-size: 1.6em;
+  color: #90909b;
+}
+
+form#login .inputWrapper.textarea textarea::-ms-input-placeholder, form#forgetPassword .inputWrapper.textarea textarea::-ms-input-placeholder, form#signup .inputWrapper.textarea textarea::-ms-input-placeholder, form#adminContact .inputWrapper.textarea textarea::-ms-input-placeholder {
+  font-size: 1.6em;
+  color: #90909b;
+}
+
+form#login .inputWrapper.textarea textarea::placeholder, form#forgetPassword .inputWrapper.textarea textarea::placeholder, form#signup .inputWrapper.textarea textarea::placeholder, form#adminContact .inputWrapper.textarea textarea::placeholder {
+  font-size: 1.6em;
+  color: #90909b;
+}
+
+form#login .inputWrapper.textarea textarea.style1, form#forgetPassword .inputWrapper.textarea textarea.style1, form#signup .inputWrapper.textarea textarea.style1, form#adminContact .inputWrapper.textarea textarea.style1 {
+  height: 8em;
+  border: 1.2px solid #d3d3d7;
+  border-radius: 1.5em;
+}
+
+form#login .inputWrapper.textarea textarea.style1 ~ label, form#forgetPassword .inputWrapper.textarea textarea.style1 ~ label, form#signup .inputWrapper.textarea textarea.style1 ~ label, form#adminContact .inputWrapper.textarea textarea.style1 ~ label {
+  bottom: 100%;
+  -webkit-transform: translateY(150%);
+     -moz-transform: translateY(150%);
+      -ms-transform: translateY(150%);
+          transform: translateY(150%);
+}
+
+form#login .inputWrapper.textarea textarea.style1:focus, form#forgetPassword .inputWrapper.textarea textarea.style1:focus, form#signup .inputWrapper.textarea textarea.style1:focus, form#adminContact .inputWrapper.textarea textarea.style1:focus {
+  border: 1.2px solid #5336B9;
+}
+
+form#login .inputWrapper.textarea textarea.style1:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style1:focus ~ label, form#signup .inputWrapper.textarea textarea.style1:focus ~ label, form#adminContact .inputWrapper.textarea textarea.style1:focus ~ label {
+  font-size: 8px;
+  right: 0.75em;
+  color: #5336B9;
+  bottom: -webkit-calc(100% + .5em);
+  bottom: -moz-calc(100% + .5em);
+  bottom: calc(100% + .5em);
+  -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+form#login .inputWrapper.textarea textarea.style2, form#forgetPassword .inputWrapper.textarea textarea.style2, form#signup .inputWrapper.textarea textarea.style2, form#adminContact .inputWrapper.textarea textarea.style2 {
+  height: 4em;
+  max-height: 12em;
+  overflow: auto;
+  border: none;
+  border-bottom: 1.2px solid #d3d3d7;
+}
+
+form#login .inputWrapper.textarea textarea.style2 ~ label, form#forgetPassword .inputWrapper.textarea textarea.style2 ~ label, form#signup .inputWrapper.textarea textarea.style2 ~ label, form#adminContact .inputWrapper.textarea textarea.style2 ~ label {
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+form#login .inputWrapper.textarea textarea.style2:focus, form#forgetPassword .inputWrapper.textarea textarea.style2:focus, form#signup .inputWrapper.textarea textarea.style2:focus, form#adminContact .inputWrapper.textarea textarea.style2:focus {
+  border-bottom: 1.2px solid #5336B9;
+}
+
+form#login .inputWrapper.textarea textarea.style2:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style2:focus ~ label, form#signup .inputWrapper.textarea textarea.style2:focus ~ label, form#adminContact .inputWrapper.textarea textarea.style2:focus ~ label {
+  font-size: 8px;
+  right: 0;
+  color: #5336B9;
+  bottom: -webkit-calc(100% + 0em);
+  bottom: -moz-calc(100% + 0em);
+  bottom: calc(100% + 0em);
+  -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+form#login .inputWrapper.textarea textarea.style2:focus ~ .line, form#forgetPassword .inputWrapper.textarea textarea.style2:focus ~ .line, form#signup .inputWrapper.textarea textarea.style2:focus ~ .line, form#adminContact .inputWrapper.textarea textarea.style2:focus ~ .line {
+  width: 100%;
+}
+
+form#login .inputWrapper.textarea textarea.style1.error, form#forgetPassword .inputWrapper.textarea textarea.style1.error, form#signup .inputWrapper.textarea textarea.style1.error, form#adminContact .inputWrapper.textarea textarea.style1.error {
+  border: 1.2px solid #ea6161;
+}
+
+form#login .inputWrapper.textarea textarea.style1.error ~ label, form#forgetPassword .inputWrapper.textarea textarea.style1.error ~ label, form#signup .inputWrapper.textarea textarea.style1.error ~ label, form#adminContact .inputWrapper.textarea textarea.style1.error ~ label {
+  color: #ea6161;
+}
+
+form#login .inputWrapper.textarea textarea.style2.error, form#forgetPassword .inputWrapper.textarea textarea.style2.error, form#signup .inputWrapper.textarea textarea.style2.error, form#adminContact .inputWrapper.textarea textarea.style2.error {
+  border-bottom: 1.2px solid #ea6161;
+}
+
+form#login .inputWrapper.textarea textarea.style2.error ~ label, form#forgetPassword .inputWrapper.textarea textarea.style2.error ~ label, form#signup .inputWrapper.textarea textarea.style2.error ~ label, form#adminContact .inputWrapper.textarea textarea.style2.error ~ label {
+  color: #ea6161;
+}
+
+form#login .inputWrapper.textarea textarea.style1 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style1 ~ label.top, form#signup .inputWrapper.textarea textarea.style1 ~ label.top, form#adminContact .inputWrapper.textarea textarea.style1 ~ label.top {
+  font-size: 8px;
+  bottom: -webkit-calc(100% + 1.5em);
+  bottom: -moz-calc(100% + 1.5em);
+  bottom: calc(100% + 1.5em);
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 0;
+}
+
+form#login .inputWrapper.textarea textarea.style2 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style2 ~ label.top, form#signup .inputWrapper.textarea textarea.style2 ~ label.top, form#adminContact .inputWrapper.textarea textarea.style2 ~ label.top {
+  font-size: 8px;
+  bottom: -webkit-calc(100% + 1em);
+  bottom: -moz-calc(100% + 1em);
+  bottom: calc(100% + 1em);
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 0;
+}
+
+form#login .inputWrapper.textarea label, form#forgetPassword .inputWrapper.textarea label, form#signup .inputWrapper.textarea label, form#adminContact .inputWrapper.textarea label {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 0.75em;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  color: #d3d3d7;
+}
+
+form#login .inputWrapper.textarea label i, form#forgetPassword .inputWrapper.textarea label i, form#signup .inputWrapper.textarea label i, form#adminContact .inputWrapper.textarea label i {
+  font-size: 1.6em;
+}
+
+form#login .inputWrapper.textarea label p, form#forgetPassword .inputWrapper.textarea label p, form#signup .inputWrapper.textarea label p, form#adminContact .inputWrapper.textarea label p {
+  font-size: 1.5em;
+  -webkit-transform: translateX(-0.3em);
+     -moz-transform: translateX(-0.3em);
+      -ms-transform: translateX(-0.3em);
+          transform: translateX(-0.3em);
+}
+
+form#login .inputWrapper.textarea .line, form#forgetPassword .inputWrapper.textarea .line, form#signup .inputWrapper.textarea .line, form#adminContact .inputWrapper.textarea .line {
+  width: 0%;
+  height: 1.2px;
+  background-color: #5336B9;
+  position: absolute;
+  right: 0;
+  top: -webkit-calc(100% - .6px);
+  top: -moz-calc(100% - .6px);
+  top: calc(100% - .6px);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#login button[type="submit"].final, form#forgetPassword button[type="submit"].final, form#signup button[type="submit"].final, form#adminContact button[type="submit"].final {
+  width: auto;
+  height: auto;
+  padding: 0.75em 3em;
+  margin-top: 0.75em;
+  border-radius: 3em;
+  font-size: 1.6em;
+  background-color: #5336B9;
+  color: #fbfbfb;
+  cursor: pointer;
+  border: 1.2px solid transparent;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+form#login button[type="submit"].final:hover, form#forgetPassword button[type="submit"].final:hover, form#signup button[type="submit"].final:hover, form#adminContact button[type="submit"].final:hover {
+  color: #5336B9;
+  background-color: white;
+  border: 1.2px solid #5336B9;
+}
+
+form#adminContact {
+  width: 100%;
+  height: auto;
+  margin: 3em 0 0 0;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+form#adminContact h6 {
+  font-size: 1.6em;
+  color: #2d2d31;
+  font-weight: 700;
+}
+
+form#adminContact .row {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.5em;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+form#adminContact .row .inputWrapper.text {
+  width: 30em;
+  margin: 1.5em;
+}
+
+form#adminContact .inputWrapper.textarea {
+  width: 64em;
+  margin: 3em 1.5em 0 0;
+}
+
+form#adminContact .inputWrapper.textarea textarea.style1 {
+  width: 100%;
+  height: 12em;
+}
+
+form#adminContact button[type="submit"].final {
+  margin: 1.5em auto 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  form#login .inputWrapper.text input.style1:focus ~ label, form#forgetPassword .inputWrapper.text input.style1:focus ~ label, form#signup .inputWrapper.text input.style1:focus ~ label, form#adminContact .inputWrapper.text input.style1:focus ~ label {
+    font-size: 6px;
+  }
+  form#login .inputWrapper.text input.style1 ~ label.top, form#forgetPassword .inputWrapper.text input.style1 ~ label.top, form#signup .inputWrapper.text input.style1 ~ label.top, form#adminContact .inputWrapper.text input.style1 ~ label.top {
+    font-size: 6px;
+  }
+  form#login .inputWrapper.textarea textarea.style1:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style1:focus ~ label, form#signup .inputWrapper.textarea textarea.style1:focus ~ label, form#adminContact .inputWrapper.textarea textarea.style1:focus ~ label {
+    font-size: 6px;
+  }
+  form#login .inputWrapper.textarea textarea.style1 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style1 ~ label.top, form#signup .inputWrapper.textarea textarea.style1 ~ label.top, form#adminContact .inputWrapper.textarea textarea.style1 ~ label.top {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form#login .inputWrapper.text input.style1:focus ~ label, form#forgetPassword .inputWrapper.text input.style1:focus ~ label, form#signup .inputWrapper.text input.style1:focus ~ label, form#adminContact .inputWrapper.text input.style1:focus ~ label {
+    font-size: 4px;
+  }
+  form#login .inputWrapper.text input.style1 ~ label.top, form#forgetPassword .inputWrapper.text input.style1 ~ label.top, form#signup .inputWrapper.text input.style1 ~ label.top, form#adminContact .inputWrapper.text input.style1 ~ label.top {
+    font-size: 4px;
+  }
+  form#login .inputWrapper.textarea textarea.style1:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style1:focus ~ label, form#signup .inputWrapper.textarea textarea.style1:focus ~ label, form#adminContact .inputWrapper.textarea textarea.style1:focus ~ label {
+    font-size: 4px;
+  }
+  form#login .inputWrapper.textarea textarea.style1 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style1 ~ label.top, form#signup .inputWrapper.textarea textarea.style1 ~ label.top, form#adminContact .inputWrapper.textarea textarea.style1 ~ label.top {
+    font-size: 4px;
+  }
+}
+
+#contact {
+  width: 80%;
+  height: auto;
+  margin: 3em auto 0 auto;
+  padding: 1.5em 2.5em;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1em 0.01em rgba(70, 69, 85, 0.3);
+          box-shadow: 0 0 1em 0.01em rgba(70, 69, 85, 0.3);
+  border-radius: 1.5em;
+  width: 60%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#contact h4 {
+  font-size: 2em;
+  color: #2d2d31;
+  font-weight: 700;
+}
+
+#contact #general, #contact #socials {
+  width: 100%;
+  height: auto;
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  border-bottom: 1px solid #c6c6cb;
+  padding-bottom: 3em;
+}
+
+#contact #general h6, #contact #socials h6 {
+  font-size: 1.6em;
+  color: #2d2d31;
+  font-weight: 700;
+}
+
+#contact #general div:not(.row), #contact #socials div:not(.row) {
+  width: auto;
+  height: auto;
+  margin-top: 0.75em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#contact #general div:not(.row) i, #contact #socials div:not(.row) i {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 30px;
+  text-align: center;
+  font-size: 1.6em;
+  color: #767682;
+  -webkit-transform: translateY(8%);
+     -moz-transform: translateY(8%);
+      -ms-transform: translateY(8%);
+          transform: translateY(8%);
+}
+
+#contact #general div:not(.row) p, #contact #socials div:not(.row) p {
+  font-size: 1.4em;
+  color: #767682;
+  -webkit-transform: translateX(-0.5em);
+     -moz-transform: translateX(-0.5em);
+      -ms-transform: translateX(-0.5em);
+          transform: translateX(-0.5em);
+}
+
+#contact #general div.row, #contact #socials div.row {
+  width: auto;
+  height: auto;
+  margin: 0.75em auto 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+#contact #general div.row a, #contact #socials div.row a {
+  width: auto;
+  height: auto;
+  margin-right: 3em;
+}
+
+#contact #general div.row a:first-child, #contact #socials div.row a:first-child {
+  margin-right: 0;
+}
+
+#contact #general div.row a i, #contact #socials div.row a i {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 1.2px solid transparent;
+  position: relative;
+  background: #694dcb;
+  color: #fbfbfb;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+#contact #general div.row a i::before, #contact #socials div.row a i::before {
+  font-size: 2.4em;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+     -moz-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+#contact #general div.row a i:hover, #contact #socials div.row a i:hover {
+  border: 1.2px solid #694dcb;
+  background-color: #fbfbfb;
+  color: #694dcb;
+}
+
+@media screen and (max-width: 1200px) {
+  #contact {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #contact {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #contact {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  #contact form#adminContact .row .inputWrapper.text {
+    width: 90%;
+  }
+  #contact form#adminContact .inputWrapper.textarea {
+    width: 90%;
+  }
+  #contact form#adminContact .inputWrapper.textarea textarea.style1 {
+    height: 12em;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,226 @@
+header nav {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-color: white;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+header nav ul#menu {
+  width: 100%;
+  height: 100%;
+  padding: 0.75em 3em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  position: relative;
+}
+
+header nav ul#menu li {
+  width: auto;
+  height: auto;
+  margin-right: 3em;
+}
+
+header nav ul#menu li:first-child {
+  margin-right: 0;
+}
+
+header nav ul#menu li a {
+  width: 100%;
+  height: 100%;
+  font-size: 1.6em;
+  color: #5336B9;
+}
+
+header nav ul#menu li.logo {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0.75em;
+}
+
+header nav ul#menu li.logo a {
+  font-size: 10px;
+  width: auto;
+  height: auto;
+}
+
+header nav ul#menu li.logo a img {
+  width: 12em;
+  height: 3em;
+}
+
+header nav ul#menu li#mobile {
+  display: none;
+}
+
+header nav.fix {
+  background-color: white;
+  position: fixed;
+  -webkit-box-shadow: 0 0.2em 0.8em -0.3em rgba(70, 69, 85, 0.3);
+          box-shadow: 0 0.2em 0.8em -0.3em rgba(70, 69, 85, 0.3);
+  z-index: 10;
+}
+
+header nav.fix ul#menu li a {
+  color: #5336B9;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    font-size: 8px;
+  }
+  header nav ul#menu li.logo a {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    font-size: 6px;
+  }
+  header nav ul#menu {
+    padding: 1.5em 3em;
+  }
+  header nav ul#menu li.logo a {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header nav {
+    height: 5em;
+  }
+  header nav ul#menu {
+    padding: 0;
+  }
+  header nav ul#menu > li:not(#mobile):not(.logo) {
+    display: none;
+  }
+  header nav ul#menu li#mobile {
+    margin-right: 0em;
+    display: block;
+    width: auto;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    padding: 0 3em;
+  }
+  header nav ul#menu li#mobile:hover ul {
+    opacity: 1;
+    visibility: visible;
+  }
+  header nav ul#menu li#mobile .fa-bars {
+    font-size: 3em;
+    color: #5336B9;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  header nav ul#menu li#mobile ul {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: all .3s linear;
+       -moz-transform: all .3s linear;
+        -ms-transform: all .3s linear;
+            transform: all .3s linear;
+    z-index: 5;
+    width: 30em;
+    height: auto;
+    padding: 0;
+    position: absolute;
+    top: 110%;
+    right: 5%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-align-content: "";
+        -ms-flex-line-pack: "";
+            align-content: "";
+    background-color: white;
+    -webkit-box-shadow: 0 0.3em 0.5em -0.1em rgba(70, 69, 85, 0.3);
+            box-shadow: 0 0.3em 0.5em -0.1em rgba(70, 69, 85, 0.3);
+  }
+  header nav ul#menu li#mobile ul li {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    font-size: 1.6em;
+    background-color: transparent;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    line-height: 4em;
+  }
+  header nav ul#menu li#mobile ul li:hover {
+    background-color: #8068d3;
+  }
+  header nav ul#menu li#mobile ul li:hover a {
+    color: #fbfbfb;
+  }
+  header nav ul#menu li#mobile ul li a {
+    width: 100%;
+    height: 100%;
+    color: #694dcb;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

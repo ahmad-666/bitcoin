@@ -1,0 +1,182 @@
+#whyBitcoin {
+  width: 80%;
+  height: auto;
+  margin: 3em auto 0 auto;
+  padding: 1.5em 2.5em;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1em 0.01em rgba(70, 69, 85, 0.3);
+          box-shadow: 0 0 1em 0.01em rgba(70, 69, 85, 0.3);
+  border-radius: 1.5em;
+  padding: 0;
+  margin-top: 6em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  border-radius: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#whyBitcoin h4 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #2d2d31;
+}
+
+#whyBitcoin .features {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+#whyBitcoin .features .feature {
+  width: 80%;
+  height: auto;
+  margin: 3em auto 0 auto;
+  padding: 1.5em 2.5em;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1em 0.01em rgba(70, 69, 85, 0.3);
+          box-shadow: 0 0 1em 0.01em rgba(70, 69, 85, 0.3);
+  border-radius: 1.5em;
+  width: 35em;
+  min-height: 30em;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#whyBitcoin .features .feature:nth-child(2) {
+  margin-right: 1.5em;
+}
+
+#whyBitcoin .features .feature h4, #whyBitcoin .features .feature p {
+  margin-top: 0.75em;
+}
+
+#whyBitcoin .features .feature img {
+  width: 12em;
+  height: 10em;
+}
+
+#whyBitcoin .features .feature h4 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #2d2d31;
+}
+
+#whyBitcoin .features .feature p {
+  max-width: 100%;
+  font-size: 1.4em;
+  line-height: 2em;
+  color: #51515a;
+}
+
+@media screen and (max-width: 930px) {
+  #whyBitcoin {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #whyBitcoin {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #whyBitcoin {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #whyBitcoin .features {
+    width: 80%;
+  }
+  #whyBitcoin .features .feature {
+    width: 100%;
+  }
+  #whyBitcoin .features .feature:nth-child(2) {
+    margin-top: 1.5em;
+    margin-right: 0;
+  }
+}
+/*# sourceMappingURL=features.css.map */

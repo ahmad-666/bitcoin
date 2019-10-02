@@ -1,0 +1,99 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+#news,#articles{
+    @include containerStyle ;
+    padding: 0; 
+    box-shadow: none ;
+    border-radius: 0 ;
+    background-color: transparent ;
+    display: flex ;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    h4{
+        font-size: $fontL ;
+        color: $textDark ;
+        font-weight: 700 ;
+    }
+    .showMore{
+        margin-top: $dist2 - .5em ;
+        font-size: $fontM + .2em ;
+        color: darken($textGrey,20%) ;
+        i{
+            transform: translate(-.3em,15%) ;
+        }
+    }
+    .article{
+        @include containerStyle ;
+        width: 100% ;
+        margin: $dist2 + .5em 0 0 0 ;
+        // overflow: hidden;
+        display: flex ;
+        @include flex(row,flex-start,center,nowrap,"") ;
+        img{
+            flex-shrink: 0 ;
+            width: 18em ;
+            height: 14em;
+            border-radius: $dist2 ;
+        }
+        .content{
+            width: 100% ;
+            height: auto;
+            margin-right: $dist2 ;
+            display: flex ;
+            @include flex(column,flex-start,flex-start,nowrap,"") ;
+            h4{
+                width: 100% ;
+                font-size: $fontM + .2em ;
+                color: $textDark ;
+                font-weight: 700 ;
+                @include multiEllipse(2,$dist2 + .5em,$textDark) ;
+            }
+            .date{
+                font-size: $fontS ;
+                color: darken($textGrey,10%) ;
+                margin-top: 0 ;
+            }
+            .text{
+                max-width: 100% ;
+                margin-top: $dist1 ;
+                font-size: $fontM ;
+                color: $textGrey ;
+                @include multiEllipse(2,$dist2 + .5em,darken($textGrey,20%)) ;
+            }
+        }
+        
+    }
+}
+#articles{
+    margin-top: $dist3 * 2 ;
+}
+@include resizeTablet(#news) ;
+@include resizeMobile(#news) ;
+@include resizeTablet(#articles) ;
+@include resizeMobile(#articles) ;
+@include mediaQ-w(750px){
+    #news,#articles{
+        width: 95% ;
+    }
+}
+@include mediaQ-w(450px){
+    #news,#articles{   
+        @include flex(column,flex-start,center,nowrap,"") ;  
+        .article{
+            @include flex(column,flex-start,center,nowrap,"") ;
+            img{
+                width: 80% ;
+                height: 22em;
+            }
+            .content{
+                @include flex(column,flex-start,center,nowrap,"") ;
+                h4{
+                    width: auto ;
+                    margin-left: auto ;
+                    margin-right: auto ;
+                    text-align: center ;                    
+                }
+            }         
+        }
+    }
+}

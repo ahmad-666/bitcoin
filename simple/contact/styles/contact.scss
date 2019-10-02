@@ -1,0 +1,111 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+@import '../../utilities/styles/form.scss' ;
+#contact{
+    @include containerStyle ;
+    width: 60% ;
+    display: flex ;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    h4{
+        font-size: $fontL ;
+        color: $textDark ;
+        font-weight: 700 ;
+    }
+    #general,#socials{
+        width: 100% ;
+        height: auto;
+        margin-top: $dist3 ;
+        display: flex ;
+        @include flex(column,flex-start,flex-start,nowrap,"") ;
+        border-bottom: 1px solid lighten($textGrey,20%) ;
+        padding-bottom: $dist3 ;
+        h6{
+            font-size: $fontM ;
+            color: $textDark ;
+            font-weight: 700 ;
+        }
+        div:not(.row){
+            width: auto ;
+            height: auto;
+            margin-top: $dist1 ;
+            display: flex ;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            i{
+                flex-shrink: 0 ;
+                width: 30px ;
+                text-align: center ;
+                font-size: $fontM ;
+                color: darken($textGrey,10%) ;
+                transform: translateY(8%) ;
+            }
+            p{
+                
+                font-size: $fontM - .2em ;
+                color: darken($textGrey,10%) ;
+                transform: translateX(-.5em) ;
+            }
+        }     
+        div.row{
+            width: auto ;
+            height: auto;
+            margin: $dist1 auto 0 auto;
+            display: flex ;
+            @include flex(row,flex-start,center,wrap,flex-start) ;
+            a{
+                width: auto ;
+                height: auto;
+                margin-right: $dist3 ;
+                &:first-child{margin-right: 0 ;}
+                i{
+                    width: 5em ;
+                    height: 5em;
+                    border-radius: 50% ;
+                    border: 1.2px solid transparent ;
+                    position: relative ;
+                    background: lighten($primaryColor,8%) ;
+                    color: $textWhite ;
+                    transition: all .3s linear ;
+                    &::before{
+                        font-size: $fontXL ;
+                        @include center-xy ;
+                    }
+                    &:hover{
+                        border: 1.2px solid lighten($primaryColor,8%) ;
+                        background-color: $textWhite ;
+                        color: lighten($primaryColor,8%) ;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ-w(1200px){
+    #contact{
+        width: 80% ;
+    }
+}
+@include resizeTablet(#contact) ;
+@include mediaQ-w(750px) {
+    #contact{
+        width: 95% ;
+    }
+}
+@include resizeMobile(#contact) ;
+@include mediaQ-w(475px){
+    #contact{
+        form#adminContact{
+            .row{
+                .inputWrapper.text{
+                    width: 90% ;
+                }
+            }
+            .inputWrapper.textarea{
+                width: 90% ;
+                textarea.style1{
+                    height: 12em;
+                }
+            }
+        }
+    }
+}

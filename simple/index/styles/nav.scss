@@ -1,0 +1,159 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+header{
+    nav{
+        width: 100% ;
+        height: auto;
+        position: absolute ;
+        top: 0 ;
+        right: 0 ;
+        z-index: 2;
+        background-color: white ;
+        transition: all .3s linear ;
+        ul#menu{
+            width: 100% ;
+            height: 100%;
+            padding: $dist1 $dist3 ;
+            display: flex ;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            position: relative ;
+            li{
+                width: auto ;
+                height: auto;
+                margin-right: $dist3 ;
+                &:first-child{margin-right: 0;}
+                a{
+                    width: 100% ;
+                    height: 100%;
+                    font-size: $fontM ;
+                    color: $primaryColor ;                   
+                }
+            }
+            li.logo{
+                @include center-y ;
+                left: $dist1;
+                a{
+                    font-size: 10px ;
+                    width: auto ;
+                    height: auto;
+                    img{
+                        width: $dist4 * 2 ;
+                        height: $dist2 * 2;
+                    }
+                }
+               
+            }
+            li#mobile{
+                display: none ;
+            }
+        }
+    }
+    nav.fix{
+        background-color: $bgColor ;
+        position: fixed ;
+        box-shadow: 0 .2em .8em -.3em $shadowColor ;
+        z-index: 10;
+        ul#menu{
+            li{
+                a{
+                    color: $primaryColor ;
+                }
+            }
+        }
+    }
+}
+@include resizeTablet(header) {
+    nav{
+        ul#menu{
+            li.logo{
+                a{
+                    font-size: 8px ;
+                }              
+            }
+        }
+    }
+    
+}
+@include resizeMobile(header) {
+    nav{
+        ul#menu{
+            padding: $dist2 $dist3 ;
+            li.logo{
+                a{
+                    font-size: 6px ;
+                }              
+            }
+        }
+    }
+}
+@include mediaQ-w(500px){
+    header{
+        nav{
+            height: 5em;
+            ul#menu{
+                padding: 0 ;
+                >li:not(#mobile):not(.logo){display: none ;}
+                li#mobile{
+                    margin-right: 0em ;
+                    display: block ;
+                    width: auto ;
+                    height: 100%;
+                    cursor: pointer;
+                    position: relative ;
+                    padding: 0 $dist3; 
+                    &:hover{
+                        ul{
+                            opacity: 1;
+                            visibility: visible ;
+                        }
+                    }
+                    .fa-bars{
+                        font-size: $fontSpecial ;
+                        color: $primaryColor ;
+                        position: relative ;
+                        top: 50% ;
+                        transform: translateY(-50%) ;
+                    }
+                    ul{
+                        visibility: hidden ;
+                        opacity: 0;
+                        transform: all .3s linear ;
+                        z-index: 5;
+                        width: 30em ;
+                        height: auto;
+                        padding: 0 ;
+                        position: absolute ;
+                        top: 110% ;
+                        right: 5% ;
+                        display: flex ;
+                        @include flex(column,flex-start,flex-start,nowrap,"") ;
+                        background-color: $bgColor ;
+                        box-shadow: 0 .3em .5em -.1em $shadowColor ;
+                        li{
+                            margin: 0 ;
+                            width: 100% ;
+                            height: auto;
+                            font-size: $fontM ;
+                            background-color: transparent ;
+                            transition: all .2s linear ;
+                            line-height: $dist3 + 1em ;
+                            &:hover{
+                                background-color: lighten($primaryColor,15%) ;
+                                a{
+                                    color: $textWhite ;
+                                }
+                            }
+                            a{
+                                width: 100% ;
+                                height: 100%;
+                                color: lighten($primaryColor,8%) ; ;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

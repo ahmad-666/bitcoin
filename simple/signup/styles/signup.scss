@@ -1,0 +1,11 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+@import '../../utilities/styles/form.scss' ;
+@include resizeTablet(form+#signup) ;
+@include resizeMobile(form+#signup) ;
+@include mediaQ-w(300px){
+    form#signup{
+        width: 90% ;
+    }
+}

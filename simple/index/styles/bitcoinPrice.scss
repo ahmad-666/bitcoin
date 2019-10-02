@@ -1,0 +1,108 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+#bitcoinPrice{
+    width: auto ;
+    height: auto;
+    margin: $dist3 auto 0 auto ;
+    padding: $dist1 ;
+    display: flex ;
+    @include flex(column,flex-start,center,nowrap,"") ;
+    h4{
+        font-size: $fontXL ;
+        font-weight: 700 ;
+        color: $textWhite ;
+    }
+    #shortDesc{
+        margin-top: $dist1 / 2 ;
+        font-size: $fontM + .2em ;
+        color: lighten($textGrey,20%) ;
+    }
+    #currPrice{
+        @include containerStyle ;
+        width: auto ;
+        height: auto;
+        margin-top: $dist2 ;
+        // border: 1px solid $textDark ;
+        padding: $dist2 $dist3 ;
+        display: flex ;
+        @include flex(row,space-around,center,nowrap,"") ;
+        .col{
+            width: auto ;
+            height: 100%;
+            margin-right: $dist3 ;
+            &:first-child{margin-right: 0 ;}
+            display: flex ;
+            @include flex(column,flex-start,flex-start,nowrap,"") ;
+            > * {
+                &:nth-child(2){margin-top: $dist1 ;}
+            }
+        }
+        .col.info{
+            i{
+                transform: rotate(-15deg) ;
+                font-size: $fontXXL ;
+                color: $orangeColor1 ;
+            }
+            p{
+                font-size: $fontS ;
+                color: $textDark ;
+            }
+        }
+        .col.price{
+            p{
+                font-size: $fontM ;
+            }
+            div.price{
+               display: flex ;
+               @include flex(row,flex-start,center,nowrap,"") ;
+               p{
+                   font-size: $fontM ;
+                   color: $textDark ;
+                   &:nth-child(2){transform: translateX(-.3em);}
+               }
+            }
+            p.top{
+                color: $greenColor1 ;
+            }
+            p.down{
+                color: lighten($redColor2,5%) ;
+            }
+            
+        }
+        .col.order{
+            a{
+                width: auto ;
+                height: auto;
+                border-radius: $dist3 ;
+                font-size: $fontM ;
+                color: $textWhite ;
+                border: 1px solid transparent ;
+                padding: $dist1 $dist2 + .5em ;
+                cursor: pointer;
+                background-color: lighten($primaryColor,8%) ;
+                transition: all .3s linear ;
+                &:hover{
+                    background-color: $bgColor ;
+                    border: 1.2px solid lighten($primaryColor,8%) ;
+                    color: lighten($primaryColor,8%) ;
+                }
+            }
+        }
+    }
+
+}
+@include resizeTablet(#bitcoinPrice) 
+@include resizeMobile(#bitcoinPrice) {
+    font-size: 8px ;
+    width: 90% ;
+    #currPrice{
+        @include flex(row,space-around,center,wrap,flex-start) ;
+        .col.order{
+            margin-top: $dist2 ;
+        }
+    }
+}
+@include mediaQ-w(450px){
+
+}

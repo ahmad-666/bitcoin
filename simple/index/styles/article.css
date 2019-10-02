@@ -1,0 +1,327 @@
+#news, #articles {
+  width: 80%;
+  height: auto;
+  margin: 3em auto 0 auto;
+  padding: 1.5em 2.5em;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1em 0.01em rgba(70, 69, 85, 0.3);
+          box-shadow: 0 0 1em 0.01em rgba(70, 69, 85, 0.3);
+  border-radius: 1.5em;
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#news h4, #articles h4 {
+  font-size: 2em;
+  color: #2d2d31;
+  font-weight: 700;
+}
+
+#news .showMore, #articles .showMore {
+  margin-top: 1em;
+  font-size: 1.8em;
+  color: #5d5d68;
+}
+
+#news .showMore i, #articles .showMore i {
+  -webkit-transform: translate(-0.3em, 15%);
+     -moz-transform: translate(-0.3em, 15%);
+      -ms-transform: translate(-0.3em, 15%);
+          transform: translate(-0.3em, 15%);
+}
+
+#news .article, #articles .article {
+  width: 80%;
+  height: auto;
+  margin: 3em auto 0 auto;
+  padding: 1.5em 2.5em;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1em 0.01em rgba(70, 69, 85, 0.3);
+          box-shadow: 0 0 1em 0.01em rgba(70, 69, 85, 0.3);
+  border-radius: 1.5em;
+  width: 100%;
+  margin: 2em 0 0 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#news .article img, #articles .article img {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 18em;
+  height: 14em;
+  border-radius: 1.5em;
+}
+
+#news .article .content, #articles .article .content {
+  width: 100%;
+  height: auto;
+  margin-right: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#news .article .content h4, #articles .article .content h4 {
+  width: 100%;
+  font-size: 1.8em;
+  color: #2d2d31;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  line-height: 2em;
+  max-height: 4em;
+  text-align: justify;
+  padding-left: 1em;
+  padding-right: 0;
+}
+
+#news .article .content h4 .ellipse, #articles .article .content h4 .ellipse {
+  color: #2d2d31;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+
+#news .article .content h4 .ellipse.show, #articles .article .content h4 .ellipse.show {
+  display: block;
+}
+
+#news .article .content .date, #articles .article .content .date {
+  font-size: 1.2em;
+  color: #767682;
+  margin-top: 0;
+}
+
+#news .article .content .text, #articles .article .content .text {
+  max-width: 100%;
+  margin-top: 0.75em;
+  font-size: 1.6em;
+  color: #90909b;
+  position: relative;
+  overflow: hidden;
+  line-height: 2em;
+  max-height: 4em;
+  text-align: justify;
+  padding-left: 1em;
+  padding-right: 0;
+}
+
+#news .article .content .text .ellipse, #articles .article .content .text .ellipse {
+  color: #5d5d68;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+
+#news .article .content .text .ellipse.show, #articles .article .content .text .ellipse.show {
+  display: block;
+}
+
+#articles {
+  margin-top: 6em;
+}
+
+@media screen and (max-width: 900px) {
+  #news {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #news {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #articles {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #articles {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #news, #articles {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #news, #articles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-align-content: "";
+        -ms-flex-line-pack: "";
+            align-content: "";
+  }
+  #news .article, #articles .article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-align-content: "";
+        -ms-flex-line-pack: "";
+            align-content: "";
+  }
+  #news .article img, #articles .article img {
+    width: 80%;
+    height: 22em;
+  }
+  #news .article .content, #articles .article .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-align-content: "";
+        -ms-flex-line-pack: "";
+            align-content: "";
+  }
+  #news .article .content h4, #articles .article .content h4 {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=article.css.map */

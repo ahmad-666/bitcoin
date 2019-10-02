@@ -1,0 +1,15 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+@import './nav.scss' ;
+@import '../../utilities/styles/topSlider.scss' ;
+header{
+    width: 100% ;
+    height: 60vh;
+    // background-image: linear-gradient(to right top, #4776bb, #426dc3, #4563c9, #5256cb, #6346cb);    position: relative ;
+}
+@include mediaQ-w(600px){
+    header{
+        height: 100vh;
+    }
+}

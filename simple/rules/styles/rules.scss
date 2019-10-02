@@ -1,0 +1,26 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+#rules{
+    @include containerStyle ;
+    display: flex ;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    h4{
+        font-size: $fontXL ;
+        color: $textDark ;
+        font-weight: 700 ;
+    }
+    p{
+        margin-top: $dist1 ;
+        font-size: $fontM ;
+        color: $textGrey ;
+        line-height: $dist2 + .5em ; 
+    }
+}
+@include resizeTablet(#rules) ;
+@include mediaQ-w(750px) {
+    #rules{
+        width: 95% ;
+    }
+}
+@include resizeMobile(#rules) ;

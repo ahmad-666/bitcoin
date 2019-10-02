@@ -1,0 +1,105 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+footer{
+    width: 100% ;
+    height: auto;
+    margin: $dist4 auto 0 auto ;
+    padding: $dist3 $dist2 ;
+    background-color: darken($darkBlue,15%) ;
+    display: flex ;
+    @include flex(row,space-around,flex-start,wrap,flex-start) ;
+    .col,.logo{
+        margin-right: $dist2 + .5em ;
+        &:first-child{margin-right: 0;}
+    }
+    .col{
+        width: auto ;
+        height: auto;
+        display: flex ;
+        @include flex(column,flex-start,flex-start,nowrap,"") ;    
+        h4{
+            font-size: $fontM + .1em ;
+            font-weight: 700 ;
+            color: $textWhite ;
+        }
+    }
+    .col.infos{  
+        a{
+            color: lighten($textGrey,5%) ;
+            font-size: $fontM  ;
+            margin-top: $dist1 ;
+        }
+    }
+    .col.contact{
+        div{
+            margin-top: $dist2 ;
+            display: flex ;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            i{
+                font-size: $fontM + .2em ;
+                color: $textGrey ;
+            }
+            p{
+                color: lighten($textGrey,5%) ;
+                font-size: $fontM - .1em  ;
+                transform: translateX(-.6em) ;
+            }
+        }
+    }
+    .col.socials{
+        .icons{
+            width: auto ;
+            height: auto;
+            display: flex ;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            margin-top: $dist1 ;
+            a{
+                width: 2.5em ;
+                height: 2.5em;
+                border-radius: 50% ;
+                margin-right: $dist2 ;
+                &:first-child{margin-right: 0}
+                font-size: $fontL ;
+                color: $textWhite ;
+                background-color: lighten($primaryColor,10%) ;
+                transition: all .3s linear ;
+                position: relative ;
+                i{
+                    @include center-xy ;
+                }
+                &:hover{
+                    color: $primaryColor ;
+                    background-color: $textWhite ;
+                }
+            }
+        }
+    }
+    a.logo{
+        width: auto ;
+        height: auto;
+        transform: translate(-25%,75%) ;
+        img{
+            width: 15em ;
+            height: 4em;
+        }
+    }
+}
+@include resizeTablet(footer) ;
+@include resizeMobile(footer) ;
+@include mediaQ-w(450px){
+    footer{
+        .col.socials{
+            width: 100% ;
+            margin-top: $dist2 ;
+        }
+    }
+}
+@include mediaQ-w(380px){
+    footer{
+        .col{
+            width: 100% ;
+            margin-top: $dist2 ;
+        }
+    }
+}

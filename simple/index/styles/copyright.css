@@ -1,0 +1,35 @@
+#copyright {
+  width: 100%;
+  padding: .5em;
+  color: #3c3c3c;
+  font-size: 2em;
+  text-align: center;
+  background-color: whitesmoke;
+  position: relative;
+  z-index: 2;
+}
+
+#copyright i {
+  -webkit-transform: translateY(20%);
+     -moz-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+#copyright a {
+  text-decoration: none;
+  color: #2d2d31;
+}
+
+@media screen and (max-width: 900px) {
+  #copyright {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #copyright {
+    font-size: 6px;
+  }
+}
+/*# sourceMappingURL=copyright.css.map */

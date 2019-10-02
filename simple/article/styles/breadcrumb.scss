@@ -1,0 +1,37 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+#breadcrumb{
+    @include containerStyle ;
+    width: 100% ;
+    height: auto;
+    margin: 0 ;
+    padding: $dist2 0;
+    display: flex ;
+    @include flex(row,flex-start,center,nowrap,"") ;
+    overflow: hidden;
+    a{   
+        flex-shrink: 0 ;  
+        margin-right: $dist2 ;
+        font-size: $fontM ;
+        color: darken($textGrey,20%) ;
+        .home{
+            font-size: $fontM ;
+            transform: translateY(10%) ;
+        }
+    }
+    .arrow{
+        flex-shrink: 0 ;  
+        font-size: $fontL ;
+        margin-right: $dist2 ;
+        color: darken($textGrey,20%) ;
+    }
+    .articleName{
+        max-width: 75% ;
+        height: auto;
+    }
+
+}
+@include resizeTablet(#breadcrumb) ;
+@include resizeMobile(#breadcrumb) ;
+

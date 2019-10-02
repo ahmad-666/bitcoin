@@ -1,0 +1,240 @@
+footer {
+  width: 100%;
+  height: auto;
+  margin: 6em auto 0 auto;
+  padding: 3em 1.5em;
+  background-color: #292b35;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+footer .col, footer .logo {
+  margin-right: 2em;
+}
+
+footer .col:first-child, footer .logo:first-child {
+  margin-right: 0;
+}
+
+footer .col {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+footer .col h4 {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #fbfbfb;
+}
+
+footer .col.infos a {
+  color: #9d9da7;
+  font-size: 1.6em;
+  margin-top: 0.75em;
+}
+
+footer .col.contact div {
+  margin-top: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+footer .col.contact div i {
+  font-size: 1.8em;
+  color: #90909b;
+}
+
+footer .col.contact div p {
+  color: #9d9da7;
+  font-size: 1.5em;
+  -webkit-transform: translateX(-0.6em);
+     -moz-transform: translateX(-0.6em);
+      -ms-transform: translateX(-0.6em);
+          transform: translateX(-0.6em);
+}
+
+footer .col.socials .icons {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  margin-top: 0.75em;
+}
+
+footer .col.socials .icons a {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  margin-right: 1.5em;
+  font-size: 2em;
+  color: #fbfbfb;
+  background-color: #6f55cd;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+  position: relative;
+}
+
+footer .col.socials .icons a:first-child {
+  margin-right: 0;
+}
+
+footer .col.socials .icons a i {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+     -moz-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+footer .col.socials .icons a:hover {
+  color: #5336B9;
+  background-color: #fbfbfb;
+}
+
+footer a.logo {
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-25%, 75%);
+     -moz-transform: translate(-25%, 75%);
+      -ms-transform: translate(-25%, 75%);
+          transform: translate(-25%, 75%);
+}
+
+footer a.logo img {
+  width: 15em;
+  height: 4em;
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  footer .col.socials {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  footer .col {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

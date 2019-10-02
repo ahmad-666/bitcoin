@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./libraries/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./init.css">
+    <link rel="stylesheet" href="./index/styles/header.css">
+    <link rel="stylesheet" href="./index/styles/bitcoinPrice.css">
+    <link rel="stylesheet" href="./index/styles/article.css">
+    <link rel="stylesheet" href="./index/styles/features.css">
+    <link rel="stylesheet" href="./index/styles/footer.css">
+    <link rel="stylesheet" href="./index/styles/copyright.css">
+</head>
+<body class="bg">
+    <header>
+        <nav>
+            <ul id="menu">
+                <li>
+                   <a href="./login.html">ثبت نام / ورود</a> 
+                </li>         
+                <li>
+                    <a href="./articles.html">اخبار و اطلاعیه</a>
+                </li>
+                <li>
+                    <a href="./articles.html">مقالات</a>
+                </li>
+                <li>
+                    <a href="./rules.html">قوانین</a>
+                </li>
+                <li>
+                    <a href="./contact.html">تماس با ما</a>
+                </li>
+                <li class="logo">
+                    <a href="./index.html">
+                        <img src="./assets/imgs/logoDark.png" alt="logo">
+                    </a>
+                </li>
+                <li id="mobile">
+                    <i class="fas fa-bars"></i>
+                    <ul>
+                        <li>
+                            <a href="./login.html">ثبت نام / ورود</a> 
+                        </li>         
+                        <li>
+                            <a href="./articles.html">اخبار و اطلاعیه</a>
+                        </li>
+                        <li>
+                            <a href="./articles.html">مقالات</a>
+                        </li>
+                        <li>
+                            <a href="./rules.html">قوانین</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">تماس با ما</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="topSlider">
+            <div class="slide active">
+                <img src="./assets/imgs/slide1.jpg" alt="slide1">
+                <p class="white">دیجی بیت سایت تمام خودکار خرید و فروش ارز دیجیتال</p>
+                <p class="white">خرید و فروش اتوماتیک پرفکت مانی و بیت کوین</p>
+            </div>
+            <div class="slide">
+                <img src="./assets/imgs/slide2.jpg" alt="slide2">
+                <p class="black">بروزرسانی نرخ بصورت روزانه</p>
+                <p class="black">دریفات سفارش در کمترین زمان ممکن</p>
+            </div>
+            <div class="slide">
+                <img src="./assets/imgs/slide3.jpg" alt="slide3">
+                <p class="white">تا انتهای فرآیند خرید با شما هستیم</p>
+                <p class="white">پشتیبانی کامل با پیامک و تیکت</p>
+            </div>
+            <i class="fas fa-angle-right arrow prev"></i>
+            <i class="fas fa-angle-left arrow next"></i>
+            <div class="dots_container">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </header>
+    <div id="bitcoinPrice">
+        <!-- <h4>عنوان سایت</h4>
+        <p id="shortDesc">توصیح کوتاه توضیح کوتاه توضیح کوتاه توضیح کوتاه</p> -->
+        <div id="currPrice">
+            <div class="col info">
+                <i class="fab fa-bitcoin"></i>
+                <p>آخرین قیمت بیت کوین</p>
+            </div>
+            <div class="col price">
+                <div class="price">
+                    <p class="animateCounter" data-min="10" data-max="100000000" data-interval="50" data-time="2000"></p>
+                    <p>ریال</p>
+                </div>
+                <p class="top">5.45% +</p>
+            </div>
+            <div class="col order">
+                <a href="#!">سفارش دهید</a>
+            </div>
+        </div>
+    </div>
+    <div id="news">
+        <h4>آخرین اخبار و اطلاعیه ها</h4>
+        <a href="./article.html" class="article">
+            <img src="./assets/imgs/article.jpg" alt="articleImg">
+            <div class="content">
+                <h4>
+                    <span class="ellipse">...</span>
+                    عنوان مقاله
+                </h4>
+                <p class="date">1398/10/10</p>
+                <p class="text">
+                    <span class="ellipse">...</span>
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله         
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله         
+                </p>
+            </div>
+        </a>
+        <a href="./article.html" class="article">
+            <img src="./assets/imgs/article.jpg" alt="articleImg">
+            <div class="content">
+                <h4>
+                    <span class="ellipse">...</span>
+                    عنوان مقاله
+                </h4>
+                <p class="date">1398/10/10</p>
+                <p class="text">
+                    <span class="ellipse">...</span>
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله         
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله         
+                </p>
+            </div>
+        </a>
+        <a href="./article.html" class="article">
+            <img src="./assets/imgs/article.jpg" alt="articleImg">
+            <div class="content">
+                <h4>
+                    <span class="ellipse">...</span>
+                    عنوان مقاله
+                </h4>
+                <p class="date">1398/10/10</p>
+                <p class="text">
+                    <span class="ellipse">...</span>
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله         
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله         
+                </p>
+            </div>
+        </a>    
+        <a href="./articles.html" class="showMore">
+            نمایش همه
+            <i class="fas fa-angle-double-left"></i>
+        </a>
+    </div>
+    <div id="articles">
+        <h4>آخرین مقالات</h4>
+        <a href="./article.html" class="article">
+            <img src="./assets/imgs/article.jpg" alt="articleImg">
+            <div class="content">
+                <h4>
+                    <span class="ellipse">...</span>
+                    عنوان مقاله
+                </h4>
+                <p class="date">1398/10/10</p>
+                <p class="text">
+                    <span class="ellipse">...</span>
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله         
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله         
+                </p>
+            </div>
+        </a>
+        <a href="./article.html" class="article">
+            <img src="./assets/imgs/article.jpg" alt="articleImg">
+            <div class="content">
+                <h4>
+                    <span class="ellipse">...</span>
+                    عنوان مقاله
+                </h4>
+                <p class="date">1398/10/10</p>
+                <p class="text">
+                    <span class="ellipse">...</span>
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله         
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله         
+                </p>
+            </div>
+        </a>
+        <a href="./article.html" class="article">
+            <img src="./assets/imgs/article.jpg" alt="articleImg">
+            <div class="content">
+                <h4>
+                    <span class="ellipse">...</span>
+                    عنوان مقاله
+                </h4>
+                <p class="date">1398/10/10</p>
+                <p class="text">
+                    <span class="ellipse">...</span>
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله         
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله
+                    متن مقاله متن مقاله متن مقاله         
+                </p>
+            </div>
+        </a>    
+        <a href="./articles.html" class="showMore">
+            نمایش همه
+            <i class="fas fa-angle-double-left"></i>
+        </a>
+    </div>
+    <div id="whyBitcoin">
+        <h4>چرا بیت کوین</h4>
+        <div class="features">
+            <div class="feature">
+                <img src="./assets/imgs/feature1.png" alt="featureImg">
+                <h4>امنیت بالا</h4>
+                <p>
+                    متن کوتاه درباره امنیت بیت کوین
+                    متن کوتاه درباره امنیت بیت کوین
+                    متن کوتاه درباره امنیت بیت کوین
+                    متن کوتاه درباره امنیت بیت کوین
+                    متن کوتاه درباره امنیت بیت کوین
+                </p>
+            </div>
+            <div class="feature">
+                <img src="./assets/imgs/feature2.png" alt="featureImg">
+                <h4>ناشناس بودن</h4>
+                <p>
+                    متن کوتاه درباره ناشناس بودن در حین استفاده بیت کوین
+                    متن کوتاه درباره ناشناس بودن در حین استفاده بیت کوین
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="col infos">
+            <h4>اطلاعات بیشتر</h4>
+            <a href="./aboutUs.html">درباره ما</a>
+            <a href="./rules.html">قوانین</a>
+        </div>
+        <div class="col contact">
+            <h4>تماس با ما</h4>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>مشهد - احمد اباد خیابان راهنمایی راهنمایی 4 پلاک 2 طبقه 2 واحد 3</p>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <p>051-38670000</p>
+            </div>
+            <div>
+                <i class="fas fa-mobile"></i>
+                <p>09393010899</p>
+            </div>        
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p>btcmaster2014@gmail.com</p>
+            </div>
+            
+        </div>
+        <div class="col socials">
+            <h4>ما را دنبال کنید</h4>
+            <div class="icons">
+                <a href="https://t.me/Xdgbit">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://www.instagram.com/xdgbit/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div id="copyright">
+        <a href="http://www.ittoos.com">
+            <i class="far fa-copyright"></i>
+            طراحی سایت توسط ittoos
+        </a>
+    </div>
+    <script src="./utilities/utilities.js"></script>
+    <script src="./utilities/scripts/topSlider.js"></script>
+    <script src="./index/scripts/nav.js"></script>
+    <script src="./index/scripts/header.js"></script>
+    <script src="./index/scripts/bitcoinPrice.js"></script>
+    <script src="./index/scripts/article.js"></script>
+</body>
+</html>

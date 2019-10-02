@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,UAAU,CAAA;EACN,KAAK,EAAE,IAAK;EACZ,OAAO,EAAE,IAAK;EACd,KAAK,EAAE,OAAa;EACpB,SAAS,ECDL,GAAG;EDEP,UAAU,EAAE,MAAO;EACnB,gBAAgB,EAAE,UAAkB;EACpC,QAAQ,EAAE,QAAS;EACnB,OAAO,EAAE,CAAE;CACd;;AACD,AAAA,UAAU,CAAC,CAAC,CAAA;EACR,SAAS,EAAE,eAAe;CAC7B;;AACD,AAAA,UAAU,CAAC,CAAC,CAAA;EACR,eAAe,EAAE,IAAK;EACtB,KAAK,EEfG,OAAO;CFgBlB;;AGwGG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,UAAU,CAAC;IACP,SAAS,EAAE,GAAI;GAElB;;;AAIL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,UAAU,CAAC;IACP,SAAS,EAAE,GAAI;GAElB",
+    "sources": [
+        "copyright.scss",
+        "../../variables.scss",
+        "../../colors.scss",
+        "../../mixins.scss",
+        "../../colors.scss"
+    ],
+    "names": [],
+    "file": "copyright.css"
+}
