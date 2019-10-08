@@ -2,10 +2,10 @@
 @import '../../colors.scss' ;
 @import '../../mixins.scss' ;
 #bitcoinPrice{
-    width: auto ;
+    width: 100% ;
     height: auto;
     margin: $dist3 auto 0 auto ;
-    padding: $dist1 ;
+    margin-top: 0;
     display: flex ;
     @include flex(column,flex-start,center,nowrap,"") ;
     h4{
@@ -18,11 +18,60 @@
         font-size: $fontM + .2em ;
         color: lighten($textGrey,20%) ;
     }
+    #movingBar{
+        width: 100% ;
+        height: auto;
+        overflow: hidden;
+        .slider{
+            width: 100% ;
+            height: auto;
+            display: flex ;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            position: relative ;
+            right: 0 ;
+            background-color: darken($darkBlue,10%) ;
+            .slide{
+                flex-shrink: 0 ;
+                width: auto ;
+                height: 100%;
+                display: flex ;
+                @include flex(row,flex-start,center,nowrap,"") ;
+                background-color: darken($darkBlue,10%) ;
+                padding: $dist2 $dist4 $dist2 0 ;
+                &:first-child{padding-right: $dist4 ;}
+                &:last-child{padding-left: $dist4 * 2 ;}
+                img{
+                    width: 10em ;
+                    height: 4em;
+                }
+                .col{
+                    margin-right: $dist1 ;
+                    width: auto ;
+                    height: auto;
+                    display: flex ;
+                    @include flex(column,flex-start,center,nowrap,"") ;
+                    .title,.info,.price{
+                        width: auto ;
+                        height: auto;
+                        margin-top: $dist1 ;
+                        &:first-child{margin-top: 0;}
+                        display: flex ;
+                        @include flex(row,flex-start,center,nowrap,"") ;
+                        p{
+                            font-size: $fontS ;
+                            color: $textWhite ;
+                            &:nth-child(2){margin-right: $dist1;}
+                        }
+                    }
+                }
+            }
+        }
+    }
     #currPrice{
         @include containerStyle ;
         width: auto ;
         height: auto;
-        margin-top: $dist2 ;
+        margin-top: $dist3 ;
         // border: 1px solid $textDark ;
         padding: $dist2 $dist3 ;
         display: flex ;
@@ -95,7 +144,6 @@
 @include resizeTablet(#bitcoinPrice) 
 @include resizeMobile(#bitcoinPrice) {
     font-size: 8px ;
-    width: 90% ;
     #currPrice{
         @include flex(row,space-around,center,wrap,flex-start) ;
         .col.order{
